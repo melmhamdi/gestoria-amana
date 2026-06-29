@@ -1,0 +1,1499 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Gestoría Amana · Extranjería, Tráfico y Administración Pública · Salt, Girona</title>
+<meta name="description" content="Gestoría administrativa colegiada (COGAC nº 4262) en C/ Manuel Falla 40C, Salt (Girona). Especialistas en extranjería, nacionalidad, tráfico DGT, renta, asesoría laboral y administración pública. Atención presencial y online en toda España." />
+<meta property="og:title" content="Gestoría Amana · Salt, Girona" />
+<meta property="og:description" content="Gestoría administrativa colegiada. Extranjería, nacionalidad, tráfico (DGT), renta, laboral y administración pública. Presencial en Salt y online en toda España." />
+<meta property="og:image" content="img/logo-full.png" />
+<meta property="og:type" content="website" />
+<meta name="theme-color" content="#54101c" />
+<link rel="icon" href="img/logo-icon.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..700&family=Mulish:ital,wght@0,300..900;1,300..700&family=Amiri:ital,wght@0,400;0,700;1,400&family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wine:#6e1423;
+  --wine-deep:#4a0e1a;
+  --wine-soft:#9c2f3f;
+  --gold:#b9914f;
+  --gold-light:#d8bc83;
+  --gold-pale:#f0e6cd;
+  --ink:#231b15;
+  --ink-soft:#534a43;
+  --cream:#fbf7f0;
+  --cream-2:#f3e9d8;
+  --paper:#fffdf9;
+  --line:rgba(110,20,35,.15);
+  --shadow-sm:0 2px 10px rgba(40,16,10,.08);
+  --shadow-md:0 18px 50px -20px rgba(70,20,15,.32);
+  --shadow-lg:0 40px 90px -35px rgba(60,15,12,.45);
+  --serif:"Fraunces",Georgia,serif;
+  --sans:"Mulish",system-ui,sans-serif;
+  --ar-serif:"Amiri",serif;
+  --ar-sans:"Tajawal",sans-serif;
+  --ease:cubic-bezier(.22,.61,.36,1);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:var(--sans);
+  background:var(--cream);
+  color:var(--ink);
+  line-height:1.65;
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+}
+body::after{
+  content:"";position:fixed;inset:0;pointer-events:none;z-index:9999;opacity:.035;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+[dir="rtl"] body, [dir="rtl"]{font-family:var(--ar-sans)}
+[dir="rtl"] .serif{font-family:var(--ar-serif)}
+.serif{font-family:var(--serif)}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.wrap{width:min(1180px,92vw);margin-inline:auto}
+.hero-content,.hero-card,.about .wrap > *,.highlight .wrap > *,.contact .wrap > *{min-width:0}
+.eyebrow{
+  font-size:.74rem;letter-spacing:.32em;text-transform:uppercase;
+  color:var(--gold);font-weight:700;display:inline-flex;align-items:center;gap:.7em;
+}
+[dir="rtl"] .eyebrow{letter-spacing:0}
+.eyebrow::before{content:"";width:26px;height:1px;background:var(--gold)}
+.section{padding:clamp(4rem,9vw,8.5rem) 0;position:relative}
+h1,h2,h3,h4{font-family:var(--serif);font-weight:400;line-height:1.08;letter-spacing:-.01em}
+[dir="rtl"] h1,[dir="rtl"] h2,[dir="rtl"] h3,[dir="rtl"] h4{font-family:var(--ar-serif);line-height:1.4;letter-spacing:0}
+.h-sec{font-size:clamp(2rem,4.6vw,3.5rem);color:var(--ink)}
+.lede{font-size:clamp(1.05rem,1.6vw,1.22rem);color:var(--ink-soft);max-width:62ch}
+
+/* ---------- buttons ---------- */
+.btn{
+  display:inline-flex;align-items:center;gap:.65em;font-family:var(--sans);
+  font-weight:700;font-size:.92rem;letter-spacing:.02em;padding:1.02em 1.9em;border-radius:999px;
+  cursor:pointer;border:1px solid transparent;transition:.45s var(--ease);position:relative;overflow:hidden;
+}
+[dir="rtl"] .btn{font-family:var(--ar-sans)}
+.btn svg{width:17px;height:17px;transition:transform .45s var(--ease)}
+.btn-primary{background:var(--wine);color:#fff;box-shadow:0 12px 30px -12px rgba(43,48,50,.7)}
+.btn-primary:hover{background:var(--wine-deep);transform:translateY(-2px);box-shadow:0 20px 40px -14px rgba(43,48,50,.75)}
+.btn-primary:hover svg{transform:translateX(4px)}
+[dir="rtl"] .btn-primary:hover svg{transform:translateX(-4px)}
+.btn-ghost{background:transparent;color:var(--ink);border-color:var(--line)}
+.btn-ghost:hover{border-color:var(--gold);color:var(--wine);background:rgba(185,145,79,.06)}
+.btn-gold{background:linear-gradient(135deg,var(--gold-light),var(--gold));color:#fff;box-shadow:0 12px 30px -12px rgba(185,145,79,.7)}
+.btn-gold:hover{transform:translateY(-2px);box-shadow:0 20px 42px -14px rgba(185,145,79,.8)}
+
+/* ---------- brand lockups ---------- */
+.brand{display:flex;align-items:center;gap:.7rem}
+.brand-icon{object-fit:contain;flex-shrink:0}
+.brand-name{display:flex;flex-direction:column;line-height:1}
+.brand-name b{font-family:var(--serif);font-weight:600}
+[dir="rtl"] .brand-name b{font-family:var(--ar-serif)}
+.brand-name span{font-size:.58rem;letter-spacing:.32em;text-transform:uppercase;margin-top:.28em}
+[dir="rtl"] .brand-name span{letter-spacing:.05em}
+
+/* ---------- top bar ---------- */
+.topbar{
+  background:var(--wine-deep);color:var(--cream-2);font-size:.8rem;letter-spacing:.02em;
+  position:relative;z-index:60;
+}
+.topbar .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;min-height:42px;flex-wrap:wrap;padding-block:.35rem}
+.topbar a{display:inline-flex;align-items:center;gap:.5em;opacity:.92;transition:.3s}
+.topbar a:hover{opacity:1;color:var(--gold-light)}
+.topbar-info{display:flex;gap:1.6rem;flex-wrap:wrap}
+.topbar svg{width:14px;height:14px;color:var(--gold-light)}
+
+/* language switcher */
+.lang{position:relative}
+.lang-btn{display:inline-flex;align-items:center;gap:.5em;background:rgba(255,255,255,.08);border:1px solid rgba(231,216,190,.22);
+  color:var(--cream-2);padding:.35em .8em;border-radius:999px;cursor:pointer;font-size:.78rem;font-weight:700;letter-spacing:.05em;transition:.3s}
+.lang-btn:hover{background:rgba(255,255,255,.16)}
+.lang-btn svg{width:13px;height:13px}
+.lang-menu{position:absolute;top:130%;inset-inline-end:0;background:var(--paper);border:1px solid var(--line);border-radius:14px;
+  box-shadow:var(--shadow-md);padding:.4rem;min-width:170px;opacity:0;visibility:hidden;transform:translateY(-8px);transition:.3s var(--ease);z-index:80}
+.lang-menu.open{opacity:1;visibility:visible;transform:translateY(0)}
+.lang-menu button{display:flex;align-items:center;gap:.7em;width:100%;background:none;border:none;padding:.6em .8em;border-radius:9px;
+  cursor:pointer;color:var(--ink);font-family:var(--sans);font-size:.86rem;font-weight:600;text-align:start;transition:.2s}
+[dir="rtl"] .lang-menu button{font-family:var(--ar-sans)}
+.lang-menu button:hover{background:var(--cream-2);color:var(--wine)}
+.lang-menu button.active{color:var(--wine)}
+.lang-menu button .flag{font-size:1.1rem;line-height:1}
+.flag-ic{display:inline-flex;border-radius:3px;overflow:hidden;box-shadow:0 0 0 1px rgba(0,0,0,.1);flex-shrink:0;line-height:0}
+.flag-ic svg{display:block}
+.lang-menu button .check{margin-inline-start:auto;color:var(--gold);opacity:0}
+.lang-menu button.active .check{opacity:1}
+
+/* ---------- header ---------- */
+.header{position:sticky;top:0;z-index:50;background:rgba(251,248,242,.86);backdrop-filter:blur(14px);
+  border-bottom:1px solid transparent;transition:.4s var(--ease)}
+.header.scrolled{box-shadow:var(--shadow-sm);border-bottom-color:var(--line);background:rgba(251,248,242,.95)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:2rem;min-height:78px;transition:.4s var(--ease)}
+.header.scrolled .nav{min-height:64px}
+.header .brand img{height:48px;width:auto;transition:.4s var(--ease)}
+.header.scrolled .brand img{height:39px}
+.nav-links{display:flex;align-items:center;gap:2rem;list-style:none}
+.nav-links a{font-size:.9rem;font-weight:600;color:var(--ink-soft);position:relative;padding:.3em 0;transition:.3s}
+.nav-links a::after{content:"";position:absolute;bottom:0;inset-inline-start:0;width:0;height:1.5px;background:var(--gold);transition:.35s var(--ease)}
+.nav-links a:hover{color:var(--wine)}
+.nav-links a:hover::after{width:100%}
+.nav-cta{display:flex;align-items:center;gap:.8rem}
+.burger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:.5em}
+.burger span{width:24px;height:2px;background:var(--ink);transition:.3s;border-radius:2px}
+.burger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.burger.open span:nth-child(2){opacity:0}
+.burger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+
+/* mobile menu */
+.mobile-menu{position:fixed;inset:0 0 0 auto;width:min(360px,86vw);background:var(--paper);z-index:70;
+  transform:translateX(100%);transition:.5s var(--ease);box-shadow:var(--shadow-lg);padding:6rem 2rem 2rem;display:flex;flex-direction:column;gap:.4rem}
+[dir="rtl"] .mobile-menu{inset:0 auto 0 0;transform:translateX(-100%)}
+.mobile-menu.open{transform:translateX(0)}
+.mobile-menu a{font-family:var(--serif);font-size:1.5rem;color:var(--ink);padding:.6rem 0;border-bottom:1px solid var(--line);transition:.3s}
+[dir="rtl"] .mobile-menu a{font-family:var(--ar-serif)}
+.mobile-menu a:hover{color:var(--wine);padding-inline-start:.5rem}
+.menu-overlay{position:fixed;inset:0;background:rgba(29,26,23,.4);backdrop-filter:blur(2px);z-index:65;opacity:0;visibility:hidden;transition:.4s}
+.menu-overlay.open{opacity:1;visibility:visible}
+
+/* ---------- hero ---------- */
+.hero{position:relative;padding:clamp(1.4rem,3.2vw,2.8rem) 0 clamp(4rem,8vw,7rem);overflow:hidden}
+.hero-bg{position:absolute;inset:0;z-index:0;background:
+  radial-gradient(60% 70% at 80% 10%,rgba(185,145,79,.14),transparent 60%),
+  radial-gradient(50% 60% at 10% 90%,rgba(110,20,35,.12),transparent 60%),
+  linear-gradient(180deg,var(--cream),var(--cream-2))}
+.hero-bg::before{content:"";position:absolute;inset:0;opacity:.5;
+  background-image:radial-gradient(var(--line) 1px,transparent 1px);background-size:34px 34px;
+  -webkit-mask-image:radial-gradient(70% 60% at 70% 30%,#000,transparent);mask-image:radial-gradient(70% 60% at 70% 30%,#000,transparent)}
+.hero .wrap{position:relative;z-index:2;display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(2rem,5vw,4.5rem);align-items:start}
+.hero-badges{display:flex;gap:.7rem;flex-wrap:wrap;margin:1.5rem 0 1.7rem}
+.chip{display:inline-flex;align-items:center;gap:.55em;background:var(--paper);border:1px solid var(--line);
+  border-radius:999px;padding:.5em 1em;font-size:.78rem;font-weight:700;color:var(--ink-soft);box-shadow:var(--shadow-sm)}
+.chip svg{width:15px;height:15px;color:var(--gold)}
+.hero h1{font-size:clamp(2.6rem,6vw,4.6rem);font-weight:300;color:var(--ink);margin-bottom:1.1rem}
+.hero h1 em{font-style:italic;color:var(--wine);font-weight:400}
+.hero h1 .gold{color:var(--gold)}
+.hero-actions{display:flex;gap:1rem;flex-wrap:wrap;margin-top:2.2rem}
+.hero-trust{margin-top:2.6rem}
+.lang-pill{display:inline-flex;align-items:center;gap:1rem;background:var(--paper);border:1px solid var(--line);
+  border-radius:999px;padding:.55rem 1.3rem .55rem .55rem;box-shadow:var(--shadow-sm)}
+[dir="rtl"] .lang-pill{padding:.55rem .55rem .55rem 1.3rem}
+.lang-pill .lbl{font-size:.82rem;font-weight:700;color:var(--ink-soft);white-space:nowrap;padding-inline-start:.55rem}
+.lang-pill .flags{display:flex;gap:.4rem}
+.lang-pill .flags span{width:28px;height:28px;border-radius:50%;overflow:hidden;display:grid;place-items:center;
+  box-shadow:0 0 0 1px var(--line),var(--shadow-sm);transition:.3s var(--ease)}
+.lang-pill .flags span:hover{transform:translateY(-3px) scale(1.08);box-shadow:0 0 0 1px var(--gold),var(--shadow-md)}
+.lang-pill .flags svg{width:140%;height:140%;object-fit:cover}
+
+/* hero visual card */
+.hero-card{position:relative}
+.hero-card .panel{background:var(--paper);border:1px solid var(--line);border-radius:26px;
+  box-shadow:var(--shadow-lg);position:relative;overflow:hidden}
+.hero-card .panel::before{content:"";position:absolute;top:0;inset-inline-start:0;width:100%;height:5px;z-index:3;
+  background:linear-gradient(90deg,var(--wine),var(--gold),var(--wine))}
+.hero-card .photo{position:relative;aspect-ratio:3/4;overflow:hidden;background:var(--wine)}
+.hero-card .photo img{width:100%;height:100%;object-fit:cover;display:block}
+.hero-card .photo .shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,18,16,0) 36%,rgba(18,16,15,.88) 100%)}
+.hero-card .photo .plate{position:absolute;left:1.5rem;right:1.5rem;bottom:1.15rem;color:#fff;z-index:2}
+[dir="rtl"] .hero-card .photo .plate{font-family:var(--ar-serif)}
+.hero-card .photo .plate b{display:block;font-family:var(--serif);font-size:1.2rem;font-weight:500;letter-spacing:.01em}
+[dir="rtl"] .hero-card .photo .plate b{font-family:var(--ar-serif)}
+.hero-card .photo .plate span{display:block;margin-top:.3rem;font-size:.74rem;letter-spacing:.03em;color:var(--cream-2);opacity:.92}
+.hero-card .info{padding:1.5rem 1.7rem 1.8rem;position:relative}
+.hero-card .info-head{display:flex;align-items:center;gap:.65em;margin-bottom:1.1rem}
+.hero-card .info-head img{width:30px;height:30px;object-fit:contain}
+.hero-card .info-head b{font-family:var(--serif);font-size:1.16rem;color:var(--wine);font-weight:500}
+[dir="rtl"] .hero-card .info-head b{font-family:var(--ar-serif)}
+.hero-card ul{list-style:none;display:flex;flex-direction:column;gap:.75rem}
+.hero-card li{display:flex;gap:.8rem;align-items:flex-start;font-size:.92rem;color:var(--ink-soft)}
+.hero-card li svg{width:20px;height:20px;color:var(--gold);flex-shrink:0;margin-top:1px}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+
+/* ---------- marquee strip ---------- */
+.strip{background:var(--wine);color:var(--cream-2);padding:1.1rem 0;overflow:hidden;white-space:nowrap}
+.strip-track{display:inline-flex;gap:3rem;animation:marquee 30s linear infinite;will-change:transform}
+.strip span{display:inline-flex;align-items:center;gap:1rem;font-family:var(--serif);font-size:1.2rem;font-style:italic;letter-spacing:.02em}
+[dir="rtl"] .strip span{font-family:var(--ar-serif);font-style:normal}
+.strip span::after{content:"✦";color:var(--gold-light);font-style:normal}
+@keyframes marquee{to{transform:translateX(-50%)}}
+[dir="rtl"] .strip-track{animation-direction:reverse}
+
+/* ---------- reveal animation ---------- */
+.reveal{opacity:0;transform:translateY(36px);transition:.9s var(--ease)}
+.reveal.in{opacity:1;transform:none}
+.reveal[data-d="1"]{transition-delay:.1s}
+.reveal[data-d="2"]{transition-delay:.2s}
+.reveal[data-d="3"]{transition-delay:.3s}
+.reveal[data-d="4"]{transition-delay:.4s}
+
+/* ---------- about ---------- */
+.about .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(2rem,5vw,4.5rem);align-items:center}
+.about-visual{position:relative}
+.about-portrait{aspect-ratio:4/5;border-radius:24px;overflow:hidden;position:relative;box-shadow:var(--shadow-lg);background:var(--wine)}
+.about-portrait img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
+.about-portrait::after{content:"";position:absolute;left:0;right:0;bottom:0;height:42%;z-index:1;
+  background:linear-gradient(180deg,transparent,rgba(20,18,16,.62))}
+.about-portrait .name-plate{position:absolute;bottom:1.6rem;inset-inline:1.6rem;z-index:3;background:rgba(255,253,249,.96);
+  border-radius:14px;padding:1rem 1.3rem;text-align:center;box-shadow:var(--shadow-md)}
+.about-portrait .name-plate b{display:block;font-family:var(--serif);font-size:1.18rem;color:var(--wine)}
+[dir="rtl"] .about-portrait .name-plate b{font-family:var(--ar-serif)}
+.about-portrait .name-plate span{font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);font-weight:700}
+.about-deco{position:absolute;inset-inline-end:-22px;top:-22px;width:120px;height:120px;border:1px solid var(--gold);border-radius:20px;z-index:-1}
+.about-text p{margin:1.2rem 0;color:var(--ink-soft);font-size:1.05rem}
+.about-text .sign{font-family:var(--serif);font-style:italic;font-size:1.4rem;color:var(--wine);margin-top:1.5rem}
+[dir="rtl"] .about-text .sign{font-family:var(--ar-serif);font-style:normal}
+.credentials{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem;margin-top:2rem}
+.cred{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:1.2rem;box-shadow:var(--shadow-sm)}
+.cred b{font-family:var(--serif);font-size:1.05rem;color:var(--wine);display:block;margin-bottom:.2rem}
+[dir="rtl"] .cred b{font-family:var(--ar-serif)}
+.cred span{font-size:.85rem;color:var(--ink-soft)}
+
+/* ---------- services ---------- */
+.services{background:linear-gradient(180deg,var(--cream-2),var(--cream))}
+.sec-head{text-align:center;max-width:720px;margin:0 auto clamp(2.5rem,5vw,4rem)}
+.sec-head .eyebrow{justify-content:center}
+.sec-head .eyebrow::after{content:"";width:26px;height:1px;background:var(--gold)}
+.sec-head .lede{margin:1rem auto 0}
+.svc-grid{display:grid;grid-template-columns:1fr;gap:1.4rem}
+@media(min-width:680px){.svc-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1120px){
+  .svc-grid{grid-template-columns:repeat(12,1fr)}
+  .svc-grid > .svc{grid-column:span 3}
+  .svc-grid > .svc:nth-child(n+5){grid-column:span 4}
+}
+.svc{background:var(--paper);border:1px solid var(--line);border-radius:22px;padding:2.2rem 2rem;position:relative;
+  overflow:hidden;transition:.5s var(--ease);cursor:default}
+.svc::before{content:"";position:absolute;top:0;inset-inline-start:0;width:100%;height:3px;
+  background:linear-gradient(90deg,var(--gold),var(--wine));transform:scaleX(0);transform-origin:left;transition:.5s var(--ease)}
+[dir="rtl"] .svc::before{transform-origin:right}
+.svc:hover{transform:translateY(-8px);box-shadow:var(--shadow-md);border-color:var(--gold-pale)}
+.svc:hover::before{transform:scaleX(1)}
+.svc-icon{width:58px;height:58px;border-radius:16px;display:grid;place-items:center;margin-bottom:1.3rem;
+  background:linear-gradient(140deg,rgba(185,145,79,.14),rgba(110,20,35,.12));color:var(--wine);transition:.5s var(--ease)}
+.svc:hover .svc-icon{background:var(--wine);color:var(--gold-light);transform:rotate(-6deg) scale(1.05)}
+.svc-icon svg{width:28px;height:28px}
+.svc h3{font-size:1.4rem;color:var(--ink);margin-bottom:.7rem}
+.svc p{font-size:.95rem;color:var(--ink-soft);margin-bottom:1.1rem}
+.svc ul{list-style:none;display:flex;flex-direction:column;gap:.5rem}
+.svc li{display:flex;gap:.55em;align-items:flex-start;font-size:.88rem;color:var(--ink-soft)}
+.svc li svg{width:16px;height:16px;color:var(--gold);flex-shrink:0;margin-top:3px}
+
+/* ---------- highlight: regularización ---------- */
+.highlight{position:relative;overflow:hidden;background:var(--wine);color:var(--cream-2)}
+.highlight::before{content:"";position:absolute;inset:0;opacity:.5;
+  background:radial-gradient(50% 80% at 85% 20%,rgba(185,145,79,.35),transparent 60%),
+  radial-gradient(50% 80% at 10% 100%,rgba(0,0,0,.4),transparent 60%)}
+.highlight::after{content:"";position:absolute;inset:0;opacity:.06;
+  background-image:radial-gradient(#fff 1px,transparent 1px);background-size:30px 30px}
+.highlight .wrap{position:relative;z-index:2;display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(2rem,5vw,4rem);align-items:center}
+.highlight .eyebrow{color:var(--gold-light)}
+.highlight .eyebrow::before{background:var(--gold-light)}
+.highlight h2{font-size:clamp(2rem,4.4vw,3.2rem);font-weight:300;color:#fff;margin:.8rem 0 1.2rem}
+.highlight h2 em{font-style:italic;color:var(--gold-light)}
+.highlight p{color:rgba(251,248,242,.84);font-size:1.08rem;max-width:54ch}
+.highlight-points{list-style:none;margin:1.8rem 0 2rem;display:grid;gap:.9rem}
+.highlight-points li{display:flex;gap:.8rem;align-items:flex-start;color:rgba(251,248,242,.92);font-size:.98rem}
+.highlight-points svg{width:20px;height:20px;color:var(--gold-light);flex-shrink:0;margin-top:2px}
+.highlight-card{background:rgba(255,253,249,.07);border:1px solid rgba(231,216,190,.25);border-radius:24px;
+  padding:2.4rem;backdrop-filter:blur(8px)}
+.highlight-card h4{font-size:1.4rem;color:#fff;margin-bottom:1.4rem}
+.step{display:flex;gap:1rem;align-items:flex-start;padding:1rem 0;border-bottom:1px solid rgba(231,216,190,.18)}
+.step:last-child{border:none}
+.step .num{font-family:var(--serif);font-size:1.6rem;color:var(--gold-light);font-style:italic;flex-shrink:0;width:36px}
+.step b{display:block;color:#fff;font-size:1.02rem;margin-bottom:.15rem}
+.step span{font-size:.86rem;color:rgba(251,248,242,.75)}
+
+/* ---------- stats ---------- */
+.stats{background:linear-gradient(135deg,var(--wine-deep),var(--wine) 58%,var(--wine-soft));position:relative;overflow:hidden;padding:clamp(3.2rem,6vw,4.8rem) 0}
+.stats::before{content:"";position:absolute;inset:0;opacity:.55;
+  background:radial-gradient(60% 80% at 92% 8%,rgba(217,178,117,.28),transparent 60%),
+  radial-gradient(55% 70% at 4% 105%,rgba(0,0,0,.38),transparent 60%)}
+.stats::after{content:"";position:absolute;inset:0;opacity:.05;
+  background-image:radial-gradient(#fff 1px,transparent 1px);background-size:28px 28px}
+.stats .wrap{display:grid;grid-template-columns:repeat(4,1fr);position:relative;z-index:2}
+.stat{text-align:center;padding:0 1.2rem;position:relative}
+.stat:not(:last-child)::after{content:"";position:absolute;top:6%;bottom:6%;inset-inline-end:0;width:1px;
+  background:linear-gradient(180deg,transparent,rgba(231,216,190,.35),transparent)}
+.stat .ic{width:48px;height:48px;border-radius:50%;background:rgba(255,255,255,.08);border:1px solid rgba(231,216,190,.28);
+  display:grid;place-items:center;margin:0 auto 1.1rem;color:var(--gold-light)}
+.stat .ic svg{width:22px;height:22px}
+.stat .num{font-family:var(--serif);font-size:clamp(2.6rem,5vw,3.6rem);color:#fff;font-weight:400;line-height:1}
+.stat .num em{font-style:normal;color:var(--gold-light)}
+.stat .lbl{margin-top:.7rem;font-size:.86rem;color:rgba(251,248,242,.82);font-weight:600;letter-spacing:.03em}
+
+/* ---------- why / process ---------- */
+.why{background:linear-gradient(180deg,var(--cream),var(--cream-2))}
+.why-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1.4rem;margin-top:1rem}
+.why-card{background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:1.9rem;transition:.4s var(--ease)}
+.why-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-md)}
+.why-card .ic{width:50px;height:50px;border-radius:14px;background:rgba(110,20,35,.08);color:var(--wine);display:grid;place-items:center;margin-bottom:1.1rem}
+.why-card .ic svg{width:25px;height:25px}
+.why-card h4{font-size:1.2rem;margin-bottom:.5rem;color:var(--ink)}
+.why-card p{font-size:.92rem;color:var(--ink-soft)}
+
+/* ---------- instagram ---------- */
+.ig-section{background:var(--cream)}
+.ig-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.1rem;margin-top:1rem}
+.ig-tile{position:relative;aspect-ratio:1/1;border-radius:18px;overflow:hidden;display:block;box-shadow:var(--shadow-sm);transition:.5s var(--ease)}
+.ig-tile img{width:100%;height:100%;object-fit:cover;display:block;filter:grayscale(.3) saturate(.85) contrast(1.02);transition:transform .7s var(--ease),filter .5s var(--ease)}
+.ig-tile:hover{transform:translateY(-6px);box-shadow:var(--shadow-md)}
+.ig-tile:hover img{transform:scale(1.07);filter:grayscale(0) saturate(1.05)}
+.ig-tile::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 42%,rgba(20,18,17,.85) 100%);opacity:0;transition:.4s}
+.ig-tile:hover::after{opacity:1}
+.ig-tile .cap{position:absolute;left:1rem;right:1rem;bottom:1rem;color:#fff;font-size:.84rem;font-weight:600;opacity:0;transform:translateY(8px);transition:.4s var(--ease);z-index:2}
+.ig-tile:hover .cap{opacity:1;transform:none}
+.ig-tile .ig-ic{position:absolute;top:.85rem;right:.85rem;width:32px;height:32px;border-radius:50%;background:rgba(255,255,255,.94);color:var(--wine);display:grid;place-items:center;z-index:2;opacity:0;transform:scale(.7);transition:.4s var(--ease)}
+[dir="rtl"] .ig-tile .ig-ic{right:auto;left:.85rem}
+.ig-tile:hover .ig-ic{opacity:1;transform:scale(1)}
+.ig-ic svg{width:15px;height:15px}
+.ig-follow{text-align:center;margin-top:2.6rem}
+.ig-handle{display:inline-flex;align-items:center;gap:.5em;color:var(--ink-soft);font-weight:700;margin-bottom:1.2rem}
+.ig-handle svg{width:18px;height:18px;color:var(--gold)}
+@media(max-width:780px){.ig-grid{grid-template-columns:repeat(2,1fr)}}
+
+/* ---------- faq ---------- */
+.faq-list{max-width:820px;margin:0 auto;display:flex;flex-direction:column;gap:.8rem}
+.faq-item{background:var(--paper);border:1px solid var(--line);border-radius:16px;overflow:hidden;transition:.3s}
+.faq-item.open{border-color:var(--gold-pale);box-shadow:var(--shadow-sm)}
+.faq-q{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:1.3rem 1.6rem;cursor:pointer;
+  font-family:var(--serif);font-size:1.12rem;color:var(--ink);font-weight:500}
+[dir="rtl"] .faq-q{font-family:var(--ar-serif)}
+.faq-q .pm{width:26px;height:26px;border-radius:50%;border:1px solid var(--gold);color:var(--wine);display:grid;place-items:center;
+  flex-shrink:0;transition:.4s var(--ease);font-size:1.1rem}
+.faq-item.open .pm{transform:rotate(135deg);background:var(--wine);color:#fff;border-color:var(--wine)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .5s var(--ease)}
+.faq-a-inner{padding:0 1.6rem 1.4rem;color:var(--ink-soft);font-size:.96rem}
+
+/* ---------- contact ---------- */
+.contact{background:linear-gradient(165deg,var(--wine-deep) 0%,#2b0a12 75%);color:var(--cream-2);position:relative;overflow:hidden}
+.contact::before{content:"";position:absolute;inset:0;opacity:.6;
+  background:radial-gradient(50% 70% at 90% 0%,rgba(185,145,79,.22),transparent 60%),
+  radial-gradient(50% 70% at 0% 100%,rgba(0,0,0,.4),transparent 60%)}
+.contact .wrap{position:relative;z-index:2;display:grid;grid-template-columns:.95fr 1.05fr;gap:clamp(2rem,5vw,4rem)}
+.contact .eyebrow{color:var(--gold-light)}
+.contact .eyebrow::before{background:var(--gold-light)}
+.contact h2{font-size:clamp(2rem,4.4vw,3.2rem);font-weight:300;color:#fff;margin:.8rem 0 1.2rem}
+.contact h2 em{font-style:italic;color:var(--gold-light)}
+.contact .lede{color:rgba(251,248,242,.78)}
+.contact-info{display:flex;flex-direction:column;gap:1.1rem;margin-top:2rem}
+.ci{display:flex;gap:1rem;align-items:center}
+.ci .ic{width:48px;height:48px;border-radius:14px;background:rgba(185,145,79,.18);color:var(--gold-light);display:grid;place-items:center;flex-shrink:0}
+.ci .ic svg{width:22px;height:22px}
+.ci small{display:block;font-size:.74rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold-light);font-weight:700}
+[dir="rtl"] .ci small{letter-spacing:.04em}
+.ci b{font-size:1.05rem;color:#fff;font-weight:600}
+.ci .maplink{display:inline-flex;margin-top:.2rem;font-size:.8rem;color:var(--gold-light);font-weight:700;opacity:.9}
+.ci .maplink:hover{opacity:1;text-decoration:underline}
+.contact-actions{display:flex;gap:.8rem;flex-wrap:wrap;margin-top:2rem}
+.btn-wa{background:#1faf55;color:#fff}
+.btn-wa:hover{background:#188e45;transform:translateY(-2px)}
+
+/* form */
+.form-card{background:rgba(255,253,249,.06);border:1px solid rgba(231,216,190,.2);border-radius:24px;padding:2.2rem;backdrop-filter:blur(8px)}
+.field{margin-bottom:1.1rem}
+.field label{display:block;font-size:.8rem;font-weight:700;letter-spacing:.04em;color:var(--gold-light);margin-bottom:.45rem}
+.field input,.field select,.field textarea{width:100%;background:rgba(255,255,255,.06);border:1px solid rgba(231,216,190,.22);
+  border-radius:12px;padding:.9em 1em;color:#fff;font-family:var(--sans);font-size:.95rem;transition:.3s}
+[dir="rtl"] .field input,[dir="rtl"] .field select,[dir="rtl"] .field textarea{font-family:var(--ar-sans)}
+.field input::placeholder,.field textarea::placeholder{color:rgba(251,248,242,.4)}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--gold-light);background:rgba(255,255,255,.1)}
+.field select option{background:var(--ink);color:#fff}
+.field textarea{resize:vertical;min-height:110px}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.form-note{font-size:.78rem;color:rgba(251,248,242,.55);margin-top:.8rem}
+.form-ok{display:none;text-align:center;padding:1rem;background:rgba(31,175,85,.15);border:1px solid rgba(31,175,85,.4);
+  border-radius:12px;color:#9ff0bd;font-weight:600;margin-top:1rem}
+.form-ok.show{display:block;animation:pop .5s var(--ease)}
+@keyframes pop{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:none}}
+
+/* ---------- footer ---------- */
+.footer{background:linear-gradient(180deg,var(--paper) 0%,var(--cream-2) 100%);color:var(--ink-soft);padding:4rem 0 2rem;border-top:1px solid rgba(216,188,131,.45)}
+.footer-top{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:2.5rem;padding-bottom:2.5rem;border-bottom:1px solid var(--line)}
+.footer .brand-icon{width:46px;height:46px}
+.footer .brand-name b{color:var(--wine);font-size:1.3rem}
+.footer .brand-name span{color:var(--gold)}
+.footer p{font-size:.9rem;margin-top:1rem;max-width:34ch}
+.footer h5{font-family:var(--serif);font-size:1.1rem;color:var(--wine);margin-bottom:1rem;font-weight:600}
+[dir="rtl"] .footer h5{font-family:var(--ar-serif)}
+.footer ul{list-style:none;display:flex;flex-direction:column;gap:.6rem}
+.footer ul a{font-size:.9rem;transition:.3s}
+.footer ul a:hover{color:var(--wine)}
+.footer-social{display:flex;gap:.7rem;margin-top:1.4rem}
+.footer-social a{width:40px;height:40px;border-radius:50%;border:1px solid var(--line);background:rgba(255,253,249,.65);color:var(--wine);display:grid;place-items:center;transition:.3s}
+.footer-social a:hover{background:var(--wine);border-color:var(--wine);color:#fff;transform:translateY(-3px)}
+.footer-social svg{width:18px;height:18px}
+.footer-bottom{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;padding-top:1.8rem;font-size:.82rem;color:rgba(83,74,67,.82)}
+.footer-bottom .flags{display:flex;gap:.4rem;font-size:1.1rem}
+
+/* ---------- floating action buttons ---------- */
+.fab{position:fixed;bottom:1.8rem;width:54px;height:54px;border-radius:50%;display:grid;place-items:center;
+  box-shadow:var(--shadow-md);z-index:90;transition:.4s var(--ease);border:none;cursor:pointer}
+.fab-wa{inset-inline-end:1.8rem;background:#25d366;color:#fff}
+.fab-wa:hover{transform:translateY(-4px) scale(1.05);box-shadow:var(--shadow-lg)}
+.fab-wa svg{width:27px;height:27px}
+.fab-top{inset-inline-start:1.8rem;background:rgba(255,253,249,.96);color:var(--wine);border:1.5px solid var(--gold-light);opacity:0;visibility:hidden;transform:translateY(14px);backdrop-filter:blur(8px)}
+.fab-top.show{opacity:1;visibility:visible;transform:none}
+.fab-top:hover{background:var(--gold-light);color:var(--wine-deep);transform:translateY(-4px)}
+.fab-top svg{width:22px;height:22px}
+@media(max-width:560px){
+  .fab{width:46px;height:46px;bottom:1.1rem}
+  .fab-wa{inset-inline-end:1rem}
+  .fab-top{inset-inline-start:1rem}
+}
+
+/* ---------- responsive ---------- */
+@media(max-width:1100px){
+  .nav{gap:1rem}
+  .nav-links{gap:1.15rem}
+  .nav-links a{font-size:.84rem;white-space:nowrap}
+  .nav-cta{gap:.55rem}
+  .nav-cta .btn{padding:.85em 1.25em;white-space:nowrap}
+  .hero .wrap{grid-template-columns:1fr}
+  .hero-card{max-width:480px;margin-inline:auto;width:100%}
+}
+@media(max-width:980px){
+  .hero .wrap,.about .wrap,.highlight .wrap,.contact .wrap{grid-template-columns:1fr}
+  .hero-card{max-width:480px;margin-inline:auto;width:100%}
+  .about-visual{max-width:420px;margin-inline:auto;width:100%}
+  .stats .wrap{grid-template-columns:repeat(2,1fr);gap:2rem}
+  .footer-top{grid-template-columns:1fr 1fr}
+  .nav-links,.topbar-info .hide-sm{display:none}
+  .burger{display:flex}
+  .nav-cta .btn-ghost{display:none}
+}
+@media(max-width:560px){
+  .wrap{width:min(1180px,calc(100vw - 2rem))}
+  .form-row{grid-template-columns:1fr}
+  .footer-top{grid-template-columns:1fr}
+  .credentials{grid-template-columns:1fr}
+  .topbar .wrap{justify-content:center}
+  .lang-pill{width:100%;border-radius:24px;justify-content:center;flex-wrap:wrap;padding:.75rem}
+  .lang-pill .lbl{white-space:normal;text-align:center;padding-inline-start:0}
+  .about-deco{display:none}
+  .hero-actions .btn{width:100%;justify-content:center}
+  .ig-grid{grid-template-columns:repeat(2,1fr);gap:.7rem}
+}
+@media(max-width:430px){
+  .header .brand img{height:34px}
+  .nav-cta .btn-primary{font-size:.72rem;padding:.68em .95em;gap:.35em;white-space:nowrap}
+  .nav-cta .btn-primary svg{display:none}
+  .nav{gap:.7rem}
+}
+@media(prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important}
+  .reveal{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<!-- ============ TOP BAR ============ -->
+<div class="topbar">
+  <div class="wrap">
+    <div class="topbar-info">
+      <a href="tel:+34641076292">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        +34 641 07 62 92
+      </a>
+      <span class="hide-sm" style="opacity:.85;display:inline-flex;align-items:center;gap:.5em">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+        <span data-i18n="top.hours">Lun-Vie 9:00-14:00 y 16:00-20:00</span>
+      </span>
+      <span class="hide-sm" style="opacity:.7;display:inline-flex;align-items:center;gap:.5em">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        <span data-i18n="top.loc">Salt · Girona · Online en toda España</span>
+      </span>
+    </div>
+    <div class="lang">
+      <button class="lang-btn" id="langBtn" aria-haspopup="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        <span id="langLabel">Español</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg>
+      </button>
+      <div class="lang-menu" id="langMenu" role="menu">
+        <button data-lang="es" class="active"><span class="flag flag-ic"><svg viewBox="0 0 20 14" width="20" height="14"><rect width="20" height="14" fill="#c60b1e"/><rect y="3.5" width="20" height="7" fill="#ffc400"/></svg></span> Español <svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" width="14" height="14"><path d="m5 12 5 5L20 7"/></svg></button>
+        <button data-lang="ca"><span class="flag flag-ic"><svg viewBox="0 0 20 14" width="20" height="14"><rect width="20" height="14" fill="#ffce00"/><rect y="1.56" width="20" height="1.56" fill="#da121a"/><rect y="4.67" width="20" height="1.56" fill="#da121a"/><rect y="7.78" width="20" height="1.56" fill="#da121a"/><rect y="10.89" width="20" height="1.56" fill="#da121a"/></svg></span> Català <svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" width="14" height="14"><path d="m5 12 5 5L20 7"/></svg></button>
+        <button data-lang="en"><span class="flag flag-ic"><svg viewBox="0 0 20 14" width="20" height="14"><rect width="20" height="14" fill="#00247d"/><path d="M0 0L20 14M20 0L0 14" stroke="#fff" stroke-width="3"/><path d="M0 0L20 14M20 0L0 14" stroke="#cf142b" stroke-width="1.3"/><rect x="8" width="4" height="14" fill="#fff"/><rect y="5" width="20" height="4" fill="#fff"/><rect x="8.8" width="2.4" height="14" fill="#cf142b"/><rect y="5.8" width="20" height="2.4" fill="#cf142b"/></svg></span> English <svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" width="14" height="14"><path d="m5 12 5 5L20 7"/></svg></button>
+        <button data-lang="ar"><span class="flag flag-ic"><svg viewBox="0 0 20 14" width="20" height="14"><rect width="20" height="14" fill="#c1272d"/><path d="M10,3.8 L10.74,5.99 L13.04,6.01 L11.19,7.39 L11.88,9.59 L10,8.25 L8.12,9.59 L8.81,7.39 L6.96,6.01 L9.27,5.99 Z" fill="none" stroke="#006233" stroke-width="0.55"/></svg></span> العربية <svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" width="14" height="14"><path d="m5 12 5 5L20 7"/></svg></button>
+        <button data-lang="fr"><span class="flag flag-ic"><svg viewBox="0 0 20 14" width="20" height="14"><rect width="6.67" height="14" fill="#0055A4"/><rect x="6.67" width="6.67" height="14" fill="#fff"/><rect x="13.33" width="6.67" height="14" fill="#EF4135"/></svg></span> Français <svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" width="14" height="14"><path d="m5 12 5 5L20 7"/></svg></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ HEADER ============ -->
+<header class="header" id="header">
+  <div class="wrap">
+    <nav class="nav">
+      <a href="#inicio" class="brand">
+        <img src="img/logo-full.png" alt="Gestoría Amana">
+      </a>
+      <ul class="nav-links">
+        <li><a href="#servicios" data-i18n="nav.services">Servicios</a></li>
+        <li><a href="#regularizacion" data-i18n="nav.reg">Regularización</a></li>
+        <li><a href="#sobre" data-i18n="nav.about">Quiénes somos</a></li>
+        <li><a href="#instagram" data-i18n="nav.ig">Instagram</a></li>
+        <li><a href="#faq" data-i18n="nav.faq">Preguntas</a></li>
+      </ul>
+      <div class="nav-cta">
+        <a href="#contacto" class="btn btn-ghost" data-i18n="nav.contact">Contacto</a>
+        <a href="https://wa.me/34641076292" target="_blank" class="btn btn-primary">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 0 1-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 0 1 8.413 3.488 11.824 11.824 0 0 1 3.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 0 1-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 0 0 1.511 5.26l-.999 3.648 3.477-.607z"/></svg>
+          <span data-i18n="nav.cta">Consulta gratuita</span>
+        </a>
+      </div>
+      <button class="burger" id="burger" aria-label="Menú"><span></span><span></span><span></span></button>
+    </nav>
+  </div>
+</header>
+
+<div class="menu-overlay" id="overlay"></div>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#servicios" data-i18n="nav.services">Servicios</a>
+  <a href="#regularizacion" data-i18n="nav.reg">Regularización</a>
+  <a href="#sobre" data-i18n="nav.about">Quiénes somos</a>
+  <a href="#instagram" data-i18n="nav.ig">Instagram</a>
+  <a href="#faq" data-i18n="nav.faq">Preguntas</a>
+  <a href="#contacto" data-i18n="nav.contact">Contacto</a>
+</div>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="inicio">
+  <div class="hero-bg"></div>
+  <div class="wrap">
+    <div class="hero-content">
+      <span class="eyebrow reveal" data-i18n="hero.eyebrow">Gestoría administrativa colegiada · Catalunya</span>
+      <h1 class="reveal" data-d="1">
+        <span data-i18n="hero.t1">Tu camino legal en</span> <em data-i18n="hero.t2">España</em>,<br>
+        <span data-i18n="hero.t3">en manos</span> <span class="gold" data-i18n="hero.t4">expertas</span>.
+      </h1>
+      <p class="lede reveal" data-d="2" data-i18n="hero.lede">Acompañamos a personas y familias en sus trámites de extranjería, nacionalidad, tráfico y administración pública. Cercanía, rigor profesional y atención en tu idioma.</p>
+      <div class="hero-badges reveal" data-d="3">
+        <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 4 5v6c0 5.5 3.8 10.7 8 12 4.2-1.3 8-6.5 8-12V5l-8-3z"/><path d="m9 12 2 2 4-4"/></svg><span data-i18n="hero.badge1">Gestora colegiada</span></span>
+        <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 4 5v6c0 5.5 3.8 10.7 8 12 4.2-1.3 8-6.5 8-12V5l-8-3z"/></svg><span data-i18n="hero.badge2">Avalada por COGAC</span></span>
+        <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/></svg><span data-i18n="hero.badge3">Atención multilingüe</span></span>
+      </div>
+      <div class="hero-actions reveal" data-d="3">
+        <a href="#contacto" class="btn btn-primary"><span data-i18n="hero.cta1">Reserva tu consulta</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        <a href="#servicios" class="btn btn-ghost" data-i18n="hero.cta2">Ver servicios</a>
+      </div>
+      <div class="hero-trust reveal" data-d="4">
+        <div class="lang-pill">
+          <span class="flags">
+            <span><svg viewBox="0 0 20 14" width="20" height="14"><rect width="20" height="14" fill="#c60b1e"/><rect y="3.5" width="20" height="7" fill="#ffc400"/></svg></span>
+            <span><svg viewBox="0 0 20 14" width="20" height="14"><rect width="20" height="14" fill="#ffce00"/><rect y="1.56" width="20" height="1.56" fill="#da121a"/><rect y="4.67" width="20" height="1.56" fill="#da121a"/><rect y="7.78" width="20" height="1.56" fill="#da121a"/><rect y="10.89" width="20" height="1.56" fill="#da121a"/></svg></span>
+            <span><svg viewBox="0 0 20 14" width="20" height="14"><rect width="20" height="14" fill="#00247d"/><path d="M0 0L20 14M20 0L0 14" stroke="#fff" stroke-width="3"/><path d="M0 0L20 14M20 0L0 14" stroke="#cf142b" stroke-width="1.3"/><rect x="8" width="4" height="14" fill="#fff"/><rect y="5" width="20" height="4" fill="#fff"/><rect x="8.8" width="2.4" height="14" fill="#cf142b"/><rect y="5.8" width="20" height="2.4" fill="#cf142b"/></svg></span>
+            <span><svg viewBox="0 0 20 14" width="20" height="14"><rect width="6.67" height="14" fill="#0055A4"/><rect x="6.67" width="6.67" height="14" fill="#fff"/><rect x="13.33" width="6.67" height="14" fill="#EF4135"/></svg></span>
+            <span><svg viewBox="0 0 20 14" width="20" height="14"><rect width="20" height="14" fill="#c1272d"/><path d="M10,3.8 L10.74,5.99 L13.04,6.01 L11.19,7.39 L11.88,9.59 L10,8.25 L8.12,9.59 L8.81,7.39 L6.96,6.01 L9.27,5.99 Z" fill="none" stroke="#006233" stroke-width="0.55"/></svg></span>
+          </span>
+          <span class="lbl" data-i18n="hero.trust">Te atendemos en 5 idiomas</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-card reveal" data-d="2">
+      <div class="panel">
+        <div class="photo">
+          <img src="img/founder-portrait.jpg" alt="Bothaina El Youzghi Kaddoumi, Gestoría Amana">
+          <div class="shade"></div>
+          <div class="plate">
+            <b>Bothaina El Youzghi Kaddoumi</b>
+            <span data-i18n="herocard.role">Gestora administrativa colegiada · COGAC nº 4262</span>
+          </div>
+        </div>
+        <div class="info">
+          <div class="info-head">
+            <img src="img/logo-icon.png" alt="">
+            <b data-i18n="herocard.title">Gestoría Amana</b>
+          </div>
+          <ul>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 5 5L20 7"/></svg><span data-i18n="herocard.l1">Residencia, arraigo y nacionalidad española</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 5 5L20 7"/></svg><span data-i18n="herocard.l2">Canje de carnets y trámites de DGT</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 5 5L20 7"/></svg><span data-i18n="herocard.l3">Laboral, administración y renta</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MARQUEE ============ -->
+<div class="strip">
+  <div class="strip-track" id="stripTrack"></div>
+</div>
+
+<!-- ============ SERVICES ============ -->
+<section class="section services" id="servicios">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow" data-i18n="svc.eyebrow">Nuestros servicios</span>
+      <h2 class="h-sec" data-i18n="svc.title">Todo lo que necesitas, en un solo lugar</h2>
+      <p class="lede" data-i18n="svc.lede">Gestionamos tus trámites de principio a fin, con seguimiento personalizado y plazos claros.</p>
+    </div>
+    <div class="svc-grid" id="svcGrid"></div>
+  </div>
+</section>
+
+<!-- ============ HIGHLIGHT: REGULARIZACIÓN ============ -->
+<section class="section highlight" id="regularizacion">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="eyebrow" data-i18n="reg.eyebrow">Campaña destacada</span>
+      <h2><span data-i18n="reg.t1">Regularización</span> <em data-i18n="reg.t2">extraordinaria</em> <span data-i18n="reg.t3">en España</span></h2>
+      <p data-i18n="reg.p">Estudiamos tu caso y te acompañamos paso a paso en los procesos de regularización. Analizamos tu situación, preparamos la documentación y te guiamos con total transparencia.</p>
+      <ul class="highlight-points">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 5 5L20 7"/></svg><span data-i18n="reg.li1">Valoración inicial gratuita y sin compromiso</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 5 5L20 7"/></svg><span data-i18n="reg.li2">Revisión de requisitos y de tu documentación</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 5 5L20 7"/></svg><span data-i18n="reg.li3">Presentación y seguimiento del expediente</span></li>
+      </ul>
+      <a href="#contacto" class="btn btn-gold"><span data-i18n="reg.cta">Consulta tu caso hoy</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    </div>
+    <div class="highlight-card reveal" data-d="2">
+      <h4 class="serif" data-i18n="reg.steps.title">Cómo te ayudamos</h4>
+      <div class="step"><span class="num">01</span><div><b data-i18n="reg.step1.t">Escuchamos tu caso</b><span data-i18n="reg.step1.d">Analizamos tu situación personal y administrativa.</span></div></div>
+      <div class="step"><span class="num">02</span><div><b data-i18n="reg.step2.t">Definimos la vía</b><span data-i18n="reg.step2.d">Identificamos la mejor opción legal para ti.</span></div></div>
+      <div class="step"><span class="num">03</span><div><b data-i18n="reg.step3.t">Preparamos todo</b><span data-i18n="reg.step3.d">Reunimos y revisamos cada documento necesario.</span></div></div>
+      <div class="step"><span class="num">04</span><div><b data-i18n="reg.step4.t">Tramitamos y seguimos</b><span data-i18n="reg.step4.d">Presentamos y te mantenemos informado en todo momento.</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="section about" id="sobre">
+  <div class="wrap">
+    <div class="about-visual reveal">
+      <div class="about-deco"></div>
+      <div class="about-portrait">
+        <img src="img/office-interior.jpg" alt="Oficina de Gestoría Amana en Salt">
+        <div class="name-plate">
+          <b>Bothaina El Youzghi Kaddoumi</b>
+          <span data-i18n="about.role">Gestora Administrativa Colegiada</span>
+        </div>
+      </div>
+    </div>
+    <div class="about-text reveal" data-d="2">
+      <span class="eyebrow" data-i18n="about.eyebrow">Quiénes somos</span>
+      <h2 class="h-sec" data-i18n="about.title">Cercanía profesional, en tu idioma</h2>
+      <p data-i18n="about.p1">Gestoría Amana nace de una vocación clara: acompañar a personas migrantes y a sus familias en los trámites que marcan su día a día, con la cercanía, la claridad y el respeto que merecen.</p>
+      <p data-i18n="about.p2">Dirigida por Bothaina El Youzghi Kaddoumi, gestora administrativa colegiada (núm. 4262) con el aval del Col·legi de Gestors Administratius de Catalunya (COGAC), ofrecemos un servicio honesto y especializado, en castellano, catalán, inglés y árabe.</p>
+      <div class="credentials">
+        <div class="cred"><b data-i18n="about.c1.t">Colegiada COGAC</b><span data-i18n="about.c1.d">Profesional acreditada y de confianza.</span></div>
+        <div class="cred"><b data-i18n="about.c2.t">Atención personalizada</b><span data-i18n="about.c2.d">Trato directo, sin intermediarios.</span></div>
+        <div class="cred"><b data-i18n="about.c3.t">Presencial y online</b><span data-i18n="about.c3.d">C/ Manuel Falla 40C, Salt (Girona) y online en toda España.</span></div>
+        <div class="cred"><b data-i18n="about.c4.t">4 idiomas</b><span data-i18n="about.c4.d">ES · CA · EN · عربي.</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STATS ============ -->
+<section class="stats">
+  <div class="wrap">
+    <div class="stat reveal">
+      <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 2 4 5v6c0 5.5 3.8 10.7 8 12 4.2-1.3 8-6.5 8-12V5l-8-3z"/><path d="m9 12 2 2 4-4"/></svg></div>
+      <div class="num" data-count="100">0</div><div class="lbl" data-i18n="stat.1">% colegiada y acreditada</div>
+    </div>
+    <div class="stat reveal" data-d="1">
+      <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
+      <div class="num" data-count="5">0</div><div class="lbl" data-i18n="stat.2">idiomas de atención</div>
+    </div>
+    <div class="stat reveal" data-d="2">
+      <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg></div>
+      <div class="num" data-count="7">0</div><div class="lbl" data-i18n="stat.3">áreas de especialidad</div>
+    </div>
+    <div class="stat reveal" data-d="3">
+      <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+      <div class="num"><em data-i18n="stat.4n">Toda</em></div><div class="lbl" data-i18n="stat.4">España, online</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHY / PROCESS ============ -->
+<section class="section why" id="proceso">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow" data-i18n="why.eyebrow">Por qué elegirnos</span>
+      <h2 class="h-sec" data-i18n="why.title">Una gestoría que da la cara</h2>
+    </div>
+    <div class="why-grid" id="whyGrid"></div>
+  </div>
+</section>
+
+<!-- ============ INSTAGRAM ============ -->
+<section class="section ig-section" id="instagram">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow" data-i18n="ig.eyebrow">Comunidad</span>
+      <h2 class="h-sec" data-i18n="ig.title">Síguenos en Instagram</h2>
+      <p class="lede" data-i18n="ig.lede">Una mirada cercana al día a día de la gestoría: trámites, citas y momentos que compartimos contigo.</p>
+    </div>
+    <div class="ig-grid reveal" id="igGrid"></div>
+    <div class="ig-follow">
+      <div class="ig-handle">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+        @gestoria_amana
+      </div><br>
+      <a href="https://www.instagram.com/gestoria_amana/" target="_blank" class="btn btn-primary">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+        <span data-i18n="ig.cta">Seguir @gestoria_amana</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="section" id="faq" style="background:var(--cream-2)">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow" data-i18n="faq.eyebrow">Preguntas frecuentes</span>
+      <h2 class="h-sec" data-i18n="faq.title">Resolvemos tus dudas</h2>
+    </div>
+    <div class="faq-list reveal" id="faqList"></div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="section contact" id="contacto">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="eyebrow" data-i18n="contact.eyebrow">Hablemos</span>
+      <h2><span data-i18n="contact.t1">Reserva tu</span> <em data-i18n="contact.t2">consulta</em></h2>
+      <p class="lede" data-i18n="contact.lede">Cuéntanos tu caso. Te respondemos lo antes posible, sin compromiso y en tu idioma.</p>
+      <div class="contact-info">
+        <a class="ci" href="tel:+34641076292">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
+          <div><small data-i18n="contact.phone">Teléfono / WhatsApp</small><b>+34 641 07 62 92</b></div>
+        </a>
+        <a class="ci" href="mailto:amanagestoria@gmail.com">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 5L2 7"/></svg></span>
+          <div><small data-i18n="contact.email">Correo electrónico</small><b>amanagestoria@gmail.com</b></div>
+        </a>
+        <div class="ci">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+          <div>
+            <small data-i18n="contact.loc">Ubicación</small><b>C/ Manuel Falla 40C, 17190 · Salt (Girona)</b>
+            <a class="maplink" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=C%2F%20Manuel%20Falla%2040C%2C%2017190%20Salt%2C%20Girona" data-i18n="contact.map">Ver en el mapa</a>
+          </div>
+        </div>
+        <div class="ci">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+          <div><small data-i18n="contact.hours">Horario de atención</small><b data-i18n="contact.hoursv">Lunes a viernes, de 9:00 a 14:00 y de 16:00 a 20:00</b></div>
+        </div>
+      </div>
+      <div class="contact-actions">
+        <a href="https://wa.me/34641076292?text=Hola%2C%20me%20gustar%C3%ADa%20una%20consulta" target="_blank" class="btn btn-wa">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 0 1-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 0 1 8.413 3.488 11.824 11.824 0 0 1 3.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 0 1-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 0 0 1.511 5.26l-.999 3.648 3.477-.607z"/></svg>
+          WhatsApp
+        </a>
+        <a href="https://www.instagram.com/gestoria_amana/" target="_blank" class="btn btn-ghost" style="color:var(--cream-2);border-color:rgba(231,216,190,.3)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+          Instagram
+        </a>
+      </div>
+    </div>
+
+    <div class="form-card reveal" data-d="2">
+      <div class="field"><label data-i18n="form.name">Nombre y apellidos</label><input type="text" id="fName" data-i18n-ph="form.name.ph" placeholder="Tu nombre completo"></div>
+      <div class="form-row">
+        <div class="field"><label data-i18n="form.phone">Teléfono</label><input type="tel" id="fPhone" data-i18n-ph="form.phone.ph" placeholder="+34 ..."></div>
+        <div class="field"><label data-i18n="form.service">Servicio</label>
+          <select id="fService">
+            <option data-i18n="form.opt0">Selecciona un servicio</option>
+            <option data-i18n="form.opt1">Extranjería y nacionalidad</option>
+            <option data-i18n="form.opt2">Regularización extraordinaria</option>
+            <option data-i18n="form.opt3">Tráfico (DGT)</option>
+            <option data-i18n="form.opt4">Asesoría laboral</option>
+            <option data-i18n="form.opt5">Administración pública / traducción</option>
+            <option data-i18n="form.opt7">Renta y fiscalidad</option>
+            <option data-i18n="form.opt6">Otro</option>
+          </select>
+        </div>
+      </div>
+      <div class="field"><label data-i18n="form.msg">Cuéntanos tu caso</label><textarea id="fMsg" data-i18n-ph="form.msg.ph" placeholder="Describe brevemente tu situación..."></textarea></div>
+      <button class="btn btn-gold" id="formBtn" style="width:100%;justify-content:center">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 0 1-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 0 1 8.413 3.488 11.824 11.824 0 0 1 3.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 0 1-5.688-1.448L.057 24z"/></svg>
+        <span data-i18n="form.submit">Enviar por WhatsApp</span>
+      </button>
+      <p class="form-note" data-i18n="form.note">Al enviar, se abrirá WhatsApp con tu mensaje listo. No compartiremos tus datos con terceros.</p>
+      <div class="form-ok" id="formOk" data-i18n="form.ok">¡Gracias! Abriendo WhatsApp para enviar tu consulta.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div>
+        <a href="#inicio" class="brand">
+          <img src="img/logo-icon.png" alt="" class="brand-icon">
+          <span class="brand-name"><b>Gestoría</b><span>Amana</span></span>
+        </a>
+        <p data-i18n="footer.about">Gestoría administrativa colegiada en Salt (Girona). Especialistas en extranjería, nacionalidad, tráfico y administración pública.</p>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/gestoria_amana/" target="_blank" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+          <a href="https://wa.me/34641076292" target="_blank" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 0 1-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 0 1 8.413 3.488 11.824 11.824 0 0 1 3.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 0 1-5.688-1.448L.057 24z"/></svg></a>
+          <a href="mailto:amanagestoria@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 5L2 7"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h5 data-i18n="footer.serv">Servicios</h5>
+        <ul>
+          <li><a href="#servicios" data-i18n="footer.s1">Extranjería</a></li>
+          <li><a href="#servicios" data-i18n="footer.s2">Nacionalidad</a></li>
+          <li><a href="#servicios" data-i18n="footer.s3">Tráfico (DGT)</a></li>
+          <li><a href="#servicios" data-i18n="footer.s4">Asesoría laboral</a></li>
+          <li><a href="#servicios" data-i18n="footer.s6">Renta y fiscalidad</a></li>
+          <li><a href="#servicios" data-i18n="footer.s5">Administración pública</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 data-i18n="footer.nav">Navegación</h5>
+        <ul>
+          <li><a href="#sobre" data-i18n="nav.about">Quiénes somos</a></li>
+          <li><a href="#regularizacion" data-i18n="nav.reg">Regularización</a></li>
+          <li><a href="#instagram" data-i18n="nav.ig">Instagram</a></li>
+          <li><a href="#faq" data-i18n="nav.faq">Preguntas</a></li>
+          <li><a href="#contacto" data-i18n="nav.contact">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 data-i18n="footer.contact">Contacto</h5>
+        <ul>
+          <li><a href="tel:+34641076292">+34 641 07 62 92</a></li>
+          <li><a href="mailto:amanagestoria@gmail.com">amanagestoria@gmail.com</a></li>
+          <li><span>C/ Manuel Falla 40C · Salt, Girona</span></li>
+          <li><span data-i18n="footer.online">Online en toda España</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Gestoría Amana · <span data-i18n="footer.rights">Bothaina El Youzghi Kaddoumi · Gestora colegiada COGAC nº 4262</span></span>
+      <div class="flags">
+        <span class="flag-ic"><svg viewBox="0 0 20 14" width="20" height="14"><rect width="20" height="14" fill="#c1272d"/><path d="M10,3.8 L10.74,5.99 L13.04,6.01 L11.19,7.39 L11.88,9.59 L10,8.25 L8.12,9.59 L8.81,7.39 L6.96,6.01 L9.27,5.99 Z" fill="none" stroke="#006233" stroke-width="0.55"/></svg></span>
+        <span class="flag-ic"><svg viewBox="0 0 20 14" width="20" height="14"><rect width="20" height="14" fill="#ffce00"/><rect y="1.56" width="20" height="1.56" fill="#da121a"/><rect y="4.67" width="20" height="1.56" fill="#da121a"/><rect y="7.78" width="20" height="1.56" fill="#da121a"/><rect y="10.89" width="20" height="1.56" fill="#da121a"/></svg></span>
+        <span class="flag-ic"><svg viewBox="0 0 20 14" width="20" height="14"><rect width="20" height="14" fill="#c60b1e"/><rect y="3.5" width="20" height="7" fill="#ffc400"/></svg></span>
+        <span class="flag-ic"><svg viewBox="0 0 20 14" width="20" height="14"><rect width="20" height="14" fill="#00247d"/><path d="M0 0L20 14M20 0L0 14" stroke="#fff" stroke-width="3"/><path d="M0 0L20 14M20 0L0 14" stroke="#cf142b" stroke-width="1.3"/><rect x="8" width="4" height="14" fill="#fff"/><rect y="5" width="20" height="4" fill="#fff"/><rect x="8.8" width="2.4" height="14" fill="#cf142b"/><rect y="5.8" width="20" height="2.4" fill="#cf142b"/></svg></span>
+        <span class="flag-ic"><svg viewBox="0 0 20 14" width="20" height="14"><rect width="6.67" height="14" fill="#0055A4"/><rect x="6.67" width="6.67" height="14" fill="#fff"/><rect x="13.33" width="6.67" height="14" fill="#EF4135"/></svg></span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ FLOATING ACTION BUTTONS ============ -->
+<a href="https://wa.me/34641076292?text=Hola%2C%20me%20gustar%C3%ADa%20una%20consulta" target="_blank" rel="noopener" class="fab fab-wa" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 0 1-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 0 1 8.413 3.488 11.824 11.824 0 0 1 3.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 0 1-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 0 0 1.511 5.26l-.999 3.648 3.477-.607z"/></svg>
+</a>
+<button class="fab fab-top" id="fabTop" aria-label="Subir arriba">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<script>
+/* ===== Traducciones Gestoría Amana — ES · CA · EN · AR · FR ===== */
+const I18N = {
+  es: {
+    "top.loc":"Salt · Girona · Online en toda España",
+    "top.hours":"Lun-Vie 9:00-14:00 y 16:00-20:00",
+    "nav.services":"Servicios","nav.reg":"Regularización","nav.about":"Quiénes somos","nav.ig":"Instagram",
+    "nav.process":"Cómo trabajamos","nav.faq":"Preguntas","nav.contact":"Contacto","nav.cta":"Consulta gratuita",
+    "hero.eyebrow":"Gestoría administrativa colegiada · Catalunya",
+    "hero.t1":"Tu camino legal en","hero.t2":"España","hero.t3":"en manos","hero.t4":"expertas",
+    "hero.lede":"Acompañamos a personas y familias en sus trámites de extranjería, nacionalidad, tráfico y administración pública. Cercanía, rigor profesional y atención en tu idioma.",
+    "hero.badge1":"Gestora colegiada","hero.badge2":"Avalada por COGAC","hero.badge3":"Atención multilingüe",
+    "hero.cta1":"Reserva tu consulta","hero.cta2":"Ver servicios","hero.trust":"Te atendemos en 5 idiomas",
+    "herocard.title":"Gestoría Amana","herocard.role":"Gestora administrativa colegiada · COGAC nº 4262",
+    "herocard.l1":"Residencia, arraigo y nacionalidad española","herocard.l2":"Canje de carnets y trámites de DGT",
+    "herocard.l3":"Laboral, administración y renta",
+    "svc.eyebrow":"Nuestros servicios","svc.title":"Todo lo que necesitas, en un solo lugar",
+    "svc.lede":"Gestionamos tus trámites de principio a fin, con seguimiento personalizado y plazos claros.",
+    "reg.eyebrow":"Campaña destacada","reg.t1":"Regularización","reg.t2":"extraordinaria","reg.t3":"en España",
+    "reg.p":"Estudiamos tu caso y te acompañamos paso a paso en los procesos de regularización. Analizamos tu situación, preparamos la documentación y te guiamos con total transparencia.",
+    "reg.li1":"Valoración inicial gratuita y sin compromiso","reg.li2":"Revisión de requisitos y de tu documentación",
+    "reg.li3":"Presentación y seguimiento del expediente","reg.cta":"Consulta tu caso hoy","reg.steps.title":"Cómo te ayudamos",
+    "reg.step1.t":"Escuchamos tu caso","reg.step1.d":"Analizamos tu situación personal y administrativa.",
+    "reg.step2.t":"Definimos la vía","reg.step2.d":"Identificamos la mejor opción legal para ti.",
+    "reg.step3.t":"Preparamos todo","reg.step3.d":"Reunimos y revisamos cada documento necesario.",
+    "reg.step4.t":"Tramitamos y seguimos","reg.step4.d":"Presentamos y te mantenemos informado en todo momento.",
+    "about.eyebrow":"Quiénes somos","about.role":"Gestora Administrativa Colegiada","about.title":"Cercanía profesional, en tu idioma",
+    "about.p1":"Gestoría Amana nace de una vocación clara: acompañar a personas migrantes y a sus familias en los trámites que marcan su día a día, con la cercanía, la claridad y el respeto que merecen.",
+    "about.p2":"Dirigida por Bothaina El Youzghi Kaddoumi, gestora administrativa colegiada (núm. 4262) con el aval del Col·legi de Gestors Administratius de Catalunya (COGAC), ofrecemos un servicio honesto y especializado, en castellano, catalán, inglés, árabe y francés.",
+    "about.c1.t":"Colegiada COGAC","about.c1.d":"Profesional acreditada y de confianza.",
+    "about.c2.t":"Atención personalizada","about.c2.d":"Trato directo, sin intermediarios.",
+    "about.c3.t":"Presencial y online","about.c3.d":"C/ Manuel Falla 40C, Salt (Girona) y online en toda España.",
+    "about.c4.t":"5 idiomas","about.c4.d":"ES · CA · EN · FR · AR",
+    "stat.1":"% colegiada y acreditada","stat.2":"idiomas de atención","stat.3":"áreas de especialidad","stat.4n":"Toda","stat.4":"España, online",
+    "why.eyebrow":"Por qué elegirnos","why.title":"Una gestoría que da la cara",
+    "ig.eyebrow":"Comunidad","ig.title":"Síguenos en Instagram",
+    "ig.lede":"Una mirada cercana al día a día de la gestoría: trámites, citas y momentos que compartimos contigo.",
+    "ig.cta":"Seguir @gestoria_amana",
+    "ig.caps":["La alcaldesa de Salt visitó nuestra oficina ✨","El día que por fin abrimos nuestras puertas","Noches enteras preparando expedientes ☕","Regularización extraordinaria en España","Campaña de la Renta 2025","Todo lo que gestionamos en la DGT"],
+    "faq.eyebrow":"Preguntas frecuentes","faq.title":"Resolvemos tus dudas",
+    "contact.eyebrow":"Hablemos","contact.t1":"Reserva tu","contact.t2":"consulta",
+    "contact.lede":"Cuéntanos tu caso. Te respondemos lo antes posible, sin compromiso y en tu idioma.",
+    "contact.phone":"Teléfono / WhatsApp","contact.email":"Correo electrónico","contact.loc":"Ubicación",
+    "contact.map":"Ver en el mapa","contact.hours":"Horario de atención","contact.hoursv":"Lunes a viernes, de 9:00 a 14:00 y de 16:00 a 20:00",
+    "form.name":"Nombre y apellidos","form.name.ph":"Tu nombre completo","form.phone":"Teléfono","form.phone.ph":"+34 ...",
+    "form.service":"Servicio","form.opt0":"Selecciona un servicio","form.opt1":"Extranjería y nacionalidad",
+    "form.opt2":"Regularización extraordinaria","form.opt3":"Tráfico (DGT)","form.opt4":"Asesoría laboral",
+    "form.opt5":"Administración pública / traducción","form.opt6":"Otro","form.opt7":"Renta y fiscalidad","form.msg":"Cuéntanos tu caso",
+    "form.msg.ph":"Describe brevemente tu situación...","form.submit":"Enviar por WhatsApp",
+    "form.note":"Al enviar, se abrirá WhatsApp con tu mensaje listo. No compartiremos tus datos con terceros.",
+    "form.ok":"¡Gracias! Abriendo WhatsApp para enviar tu consulta.",
+    "footer.about":"Gestoría administrativa colegiada en Salt (Girona). Especialistas en extranjería, nacionalidad, tráfico y administración pública.",
+    "footer.serv":"Servicios","footer.s1":"Extranjería","footer.s2":"Nacionalidad","footer.s3":"Tráfico (DGT)","footer.s4":"Asesoría laboral","footer.s5":"Administración pública","footer.s6":"Renta y fiscalidad",
+    "footer.nav":"Navegación","footer.contact":"Contacto","footer.loc":"Salt · Girona, Catalunya","footer.online":"Online en toda España",
+    "footer.rights":"Bothaina El Youzghi Kaddoumi · Gestora colegiada COGAC nº 4262",
+    "marquee":["Extranjería","Nacionalidad española","Tráfico · DGT","Asesoría laboral","Renta y fiscalidad","Administración pública","Traducción","Regularización"],
+    "services":[
+      {icon:"globe",t:"Extranjería y nacionalidad",p:"Tramitamos tu residencia y tu camino hacia la ciudadanía española.",
+       li:["Permisos de residencia y arraigo","Profesional altamente cualificado","Nómadas digitales","Nacionalidad española"]},
+      {icon:"car",t:"Tráfico (DGT)",p:"No somos una asesoría, somos una oficina DGT.",
+       li:["Transferencias de vehículos al momento","Canje de carnets de conducir extranjeros","Matriculación e importación de vehículos","Bajas, duplicados y consulta de puntos"]},
+      {icon:"briefcase",t:"Asesoría laboral",p:"Te asesoramos en tu relación laboral y con la Seguridad Social.",
+       li:["Revisión de contratos de trabajo","Nóminas","Trámites ante la Seguridad Social"]},
+      {icon:"receipt",t:"Renta y fiscalidad",p:"Te acompañamos en tu Declaración de la Renta y otras gestiones fiscales.",
+       li:["Declaración de la Renta (IRPF)","Descarga y revisión del borrador","Cálculo y optimización del IRPF","Gestión ante la Agencia Tributaria"]},
+      {icon:"building",t:"Administración pública y traducción",p:"Gestión especializada ante todas las administraciones.",
+       li:["Ayuntamientos y consejos comarcales","Generalitat de Catalunya y Oficina de Treball","Administración General del Estado","Traducción de documentos"]},
+      {icon:"search",t:"Acompañamiento en empleo",p:"Te orientamos en tu búsqueda de trabajo en España.",
+       li:["Apoyo en la búsqueda de empleo","Orientación y documentación","Trámites asociados"]},
+      {icon:"shield",t:"Regularización extraordinaria",p:"Estudiamos tu caso y te guiamos paso a paso.",
+       li:["Valoración inicial gratuita","Revisión de requisitos","Presentación y seguimiento"]}
+    ],
+    "why":[
+      {icon:"shield",t:"Profesional colegiada",p:"Trabajamos con el aval del COGAC. Seriedad y garantías reales."},
+      {icon:"heart",t:"Trato humano",p:"Sabemos lo que supone cada trámite. Te tratamos con cercanía y respeto."},
+      {icon:"globe",t:"Atención en tu idioma",p:"Castellano, catalán, inglés, árabe y francés, para que todo quede claro."},
+      {icon:"clock",t:"Transparencia total",p:"Plazos claros, sin sorpresas y con seguimiento de tu expediente."}
+    ],
+    "faq":[
+      {q:"¿Atendéis solo en Girona?",a:"Nuestra oficina está en C/ Manuel Falla 40C, 17190, Salt (Girona), abierta de lunes a viernes de 9:00 a 14:00 y de 16:00 a 20:00. También atendemos online en toda España por teléfono, WhatsApp o videollamada."},
+      {q:"¿En qué idiomas puedo ser atendido?",a:"Te atendemos en castellano, catalán, inglés, árabe y francés, para que entiendas cada paso de tu trámite con total claridad."},
+      {q:"¿La primera consulta tiene coste?",a:"Realizamos una valoración inicial de tu caso sin compromiso. Cuéntanos tu situación y te orientamos sobre las opciones disponibles."},
+      {q:"¿Sois una gestoría oficial?",a:"Sí. Bothaina El Youzghi Kaddoumi es gestora administrativa colegiada (núm. 4262), con el aval del Col·legi de Gestors Administratius de Catalunya (COGAC)."},
+      {q:"¿Qué documentación necesito?",a:"Depende de cada trámite. En la consulta inicial revisamos tu situación y te indicamos exactamente qué documentos necesitas reunir."}
+    ]
+  },
+
+  ca: {
+    "top.loc":"Salt · Girona · Online a tota Espanya",
+    "top.hours":"Dl-Dv 9:00-14:00 i 16:00-20:00",
+    "nav.services":"Serveis","nav.reg":"Regularització","nav.about":"Qui som","nav.ig":"Instagram",
+    "nav.process":"Com treballem","nav.faq":"Preguntes","nav.contact":"Contacte","nav.cta":"Consulta gratuïta",
+    "hero.eyebrow":"Gestoria administrativa col·legiada · Catalunya",
+    "hero.t1":"El teu camí legal a","hero.t2":"Espanya","hero.t3":"en mans","hero.t4":"expertes",
+    "hero.lede":"Acompanyem persones i famílies en els seus tràmits d'estrangeria, nacionalitat, trànsit i administració pública. Proximitat, rigor professional i atenció en el teu idioma.",
+    "hero.badge1":"Gestora col·legiada","hero.badge2":"Avalada pel COGAC","hero.badge3":"Atenció multilingüe",
+    "hero.cta1":"Reserva la teva consulta","hero.cta2":"Veure serveis","hero.trust":"T'atenem en 5 idiomes",
+    "herocard.title":"Gestoria Amana","herocard.role":"Gestora administrativa col·legiada · COGAC núm. 4262",
+    "herocard.l1":"Residència, arrelament i nacionalitat espanyola","herocard.l2":"Canvi de carnets i tràmits de DGT",
+    "herocard.l3":"Laboral, administració i renda",
+    "svc.eyebrow":"Els nostres serveis","svc.title":"Tot el que necessites, en un sol lloc",
+    "svc.lede":"Gestionem els teus tràmits de principi a fi, amb seguiment personalitzat i terminis clars.",
+    "reg.eyebrow":"Campanya destacada","reg.t1":"Regularització","reg.t2":"extraordinària","reg.t3":"a Espanya",
+    "reg.p":"Estudiem el teu cas i t'acompanyem pas a pas en els processos de regularització. Analitzem la teva situació, preparem la documentació i et guiem amb total transparència.",
+    "reg.li1":"Valoració inicial gratuïta i sense compromís","reg.li2":"Revisió de requisits i de la teva documentació",
+    "reg.li3":"Presentació i seguiment de l'expedient","reg.cta":"Consulta el teu cas avui","reg.steps.title":"Com t'ajudem",
+    "reg.step1.t":"Escoltem el teu cas","reg.step1.d":"Analitzem la teva situació personal i administrativa.",
+    "reg.step2.t":"Definim la via","reg.step2.d":"Identifiquem la millor opció legal per a tu.",
+    "reg.step3.t":"Ho preparem tot","reg.step3.d":"Reunim i revisem cada document necessari.",
+    "reg.step4.t":"Tramitem i seguim","reg.step4.d":"Presentem i et mantenim informat en tot moment.",
+    "about.eyebrow":"Qui som","about.role":"Gestora Administrativa Col·legiada","about.title":"Proximitat professional, en el teu idioma",
+    "about.p1":"Gestoria Amana neix d'una vocació clara: acompanyar persones migrants i les seves famílies en els tràmits que marquen el seu dia a dia, amb la proximitat, la claredat i el respecte que mereixen.",
+    "about.p2":"Dirigida per Bothaina El Youzghi Kaddoumi, gestora administrativa col·legiada (núm. 4262) amb l'aval del Col·legi de Gestors Administratius de Catalunya (COGAC), oferim un servei honest i especialitzat, en castellà, català, anglès, àrab i francès.",
+    "about.c1.t":"Col·legiada COGAC","about.c1.d":"Professional acreditada i de confiança.",
+    "about.c2.t":"Atenció personalitzada","about.c2.d":"Tracte directe, sense intermediaris.",
+    "about.c3.t":"Presencial i online","about.c3.d":"C/ Manuel Falla 40C, Salt (Girona) i online a tota Espanya.",
+    "about.c4.t":"5 idiomes","about.c4.d":"ES · CA · EN · FR · AR",
+    "stat.1":"% col·legiada i acreditada","stat.2":"idiomes d'atenció","stat.3":"àrees d'especialitat","stat.4n":"Tota","stat.4":"Espanya, online",
+    "why.eyebrow":"Per què triar-nos","why.title":"Una gestoria que dona la cara",
+    "ig.eyebrow":"Comunitat","ig.title":"Segueix-nos a Instagram",
+    "ig.lede":"Una mirada propera al dia a dia de la gestoria: tràmits, cites i moments que compartim amb tu.",
+    "ig.cta":"Seguir @gestoria_amana",
+    "ig.caps":["L'alcaldessa de Salt va visitar la nostra oficina ✨","El dia que per fi vam obrir les portes","Nits senceres preparant expedients ☕","Regularització extraordinària a Espanya","Campanya de la Renda 2025","Tot el que gestionem a la DGT"],
+    "faq.eyebrow":"Preguntes freqüents","faq.title":"Resolem els teus dubtes",
+    "contact.eyebrow":"Parlem-ne","contact.t1":"Reserva la teva","contact.t2":"consulta",
+    "contact.lede":"Explica'ns el teu cas. Et responem com més aviat millor, sense compromís i en el teu idioma.",
+    "contact.phone":"Telèfon / WhatsApp","contact.email":"Correu electrònic","contact.loc":"Ubicació",
+    "contact.map":"Veure al mapa","contact.hours":"Horari d'atenció","contact.hoursv":"De dilluns a divendres, de 9:00 a 14:00 i de 16:00 a 20:00",
+    "form.name":"Nom i cognoms","form.name.ph":"El teu nom complet","form.phone":"Telèfon","form.phone.ph":"+34 ...",
+    "form.service":"Servei","form.opt0":"Selecciona un servei","form.opt1":"Estrangeria i nacionalitat",
+    "form.opt2":"Regularització extraordinària","form.opt3":"Trànsit (DGT)","form.opt4":"Assessoria laboral",
+    "form.opt5":"Administració pública / traducció","form.opt6":"Altres","form.opt7":"Renda i fiscalitat","form.msg":"Explica'ns el teu cas",
+    "form.msg.ph":"Descriu breument la teva situació...","form.submit":"Enviar per WhatsApp",
+    "form.note":"En enviar, s'obrirà WhatsApp amb el teu missatge a punt. No compartirem les teves dades amb tercers.",
+    "form.ok":"Gràcies! Obrint WhatsApp per enviar la teva consulta.",
+    "footer.about":"Gestoria administrativa col·legiada a Salt (Girona). Especialistes en estrangeria, nacionalitat, trànsit i administració pública.",
+    "footer.serv":"Serveis","footer.s1":"Estrangeria","footer.s2":"Nacionalitat","footer.s3":"Trànsit (DGT)","footer.s4":"Assessoria laboral","footer.s5":"Administració pública","footer.s6":"Renda i fiscalitat",
+    "footer.nav":"Navegació","footer.contact":"Contacte","footer.loc":"Salt · Girona, Catalunya","footer.online":"Online a tota Espanya",
+    "footer.rights":"Bothaina El Youzghi Kaddoumi · Gestora col·legiada COGAC núm. 4262",
+    "marquee":["Estrangeria","Nacionalitat espanyola","Trànsit · DGT","Assessoria laboral","Renda i fiscalitat","Administració pública","Traducció","Regularització"],
+    "services":[
+      {icon:"globe",t:"Estrangeria i nacionalitat",p:"Tramitem la teva residència i el teu camí cap a la ciutadania espanyola.",
+       li:["Permisos de residència i arrelament","Professional altament qualificat","Nòmades digitals","Nacionalitat espanyola"]},
+      {icon:"car",t:"Trànsit (DGT)",p:"No som una assessoria, som una oficina DGT.",
+       li:["Transferències de vehicles al moment","Canvi de carnets de conduir estrangers","Matriculació i importació de vehicles","Baixes, duplicats i consulta de punts"]},
+      {icon:"briefcase",t:"Assessoria laboral",p:"T'assessorem en la teva relació laboral i amb la Seguretat Social.",
+       li:["Revisió de contractes de treball","Nòmines","Tràmits davant la Seguretat Social"]},
+      {icon:"receipt",t:"Renda i fiscalitat",p:"T'acompanyem en la teva Declaració de la Renda i altres gestions fiscals.",
+       li:["Declaració de la Renda (IRPF)","Descàrrega i revisió de l'esborrany","Càlcul i optimització de l'IRPF","Gestió davant l'Agència Tributària"]},
+      {icon:"building",t:"Administració pública i traducció",p:"Gestió especialitzada davant totes les administracions.",
+       li:["Ajuntaments i consells comarcals","Generalitat de Catalunya i Oficina de Treball","Administració General de l'Estat","Traducció de documents"]},
+      {icon:"search",t:"Acompanyament en l'ocupació",p:"T'orientem en la teva cerca de feina a Espanya.",
+       li:["Suport en la cerca de feina","Orientació i documentació","Tràmits associats"]},
+      {icon:"shield",t:"Regularització extraordinària",p:"Estudiem el teu cas i et guiem pas a pas.",
+       li:["Valoració inicial gratuïta","Revisió de requisits","Presentació i seguiment"]}
+    ],
+    "why":[
+      {icon:"shield",t:"Professional col·legiada",p:"Treballem amb l'aval del COGAC. Serietat i garanties reals."},
+      {icon:"heart",t:"Tracte humà",p:"Sabem el que suposa cada tràmit. Et tractem amb proximitat i respecte."},
+      {icon:"globe",t:"Atenció en el teu idioma",p:"Castellà, català, anglès, àrab i francès, perquè tot quedi clar."},
+      {icon:"clock",t:"Transparència total",p:"Terminis clars, sense sorpreses i amb seguiment del teu expedient."}
+    ],
+    "faq":[
+      {q:"Ateneu només a Girona?",a:"La nostra oficina és a C/ Manuel Falla 40C, 17190, Salt (Girona), oberta de dilluns a divendres de 9:00 a 14:00 i de 16:00 a 20:00. També atenem online a tota Espanya per telèfon, WhatsApp o videotrucada."},
+      {q:"En quins idiomes puc ser atès?",a:"T'atenem en castellà, català, anglès, àrab i francès, perquè entenguis cada pas del teu tràmit amb total claredat."},
+      {q:"La primera consulta té cost?",a:"Fem una valoració inicial del teu cas sense compromís. Explica'ns la teva situació i t'orientem sobre les opcions disponibles."},
+      {q:"Sou una gestoria oficial?",a:"Sí. Bothaina El Youzghi Kaddoumi és gestora administrativa col·legiada (núm. 4262), amb l'aval del Col·legi de Gestors Administratius de Catalunya (COGAC)."},
+      {q:"Quina documentació necessito?",a:"Depèn de cada tràmit. A la consulta inicial revisem la teva situació i t'indiquem exactament quins documents necessites reunir."}
+    ]
+  },
+
+  en: {
+    "top.loc":"Salt · Girona · Online across Spain",
+    "top.hours":"Mon-Fri 9:00am-2pm & 4-8pm",
+    "nav.services":"Services","nav.reg":"Regularization","nav.about":"About us","nav.ig":"Instagram",
+    "nav.process":"How we work","nav.faq":"FAQ","nav.contact":"Contact","nav.cta":"Free consultation",
+    "hero.eyebrow":"Registered administrative agency · Catalonia",
+    "hero.t1":"Your legal path in","hero.t2":"Spain","hero.t3":"in expert","hero.t4":"hands",
+    "hero.lede":"We guide individuals and families through immigration, nationality, traffic and public administration procedures. Warmth, professional rigour and service in your own language.",
+    "hero.badge1":"Registered agent","hero.badge2":"Backed by COGAC","hero.badge3":"Multilingual service",
+    "hero.cta1":"Book your consultation","hero.cta2":"See services","hero.trust":"We assist you in 5 languages",
+    "herocard.title":"Gestoría Amana","herocard.role":"Registered administrative agent · COGAC No. 4262",
+    "herocard.l1":"Residence, arraigo and Spanish nationality","herocard.l2":"Licence exchange & DGT procedures",
+    "herocard.l3":"Labour, administration & tax",
+    "svc.eyebrow":"Our services","svc.title":"Everything you need, in one place",
+    "svc.lede":"We handle your procedures from start to finish, with personal follow-up and clear timelines.",
+    "reg.eyebrow":"Featured campaign","reg.t1":"Extraordinary","reg.t2":"regularization","reg.t3":"in Spain",
+    "reg.p":"We study your case and guide you step by step through regularization processes. We assess your situation, prepare the paperwork and accompany you with full transparency.",
+    "reg.li1":"Free, no-obligation initial assessment","reg.li2":"Review of requirements and your documents",
+    "reg.li3":"Submission and case follow-up","reg.cta":"Get your case reviewed today","reg.steps.title":"How we help",
+    "reg.step1.t":"We listen to your case","reg.step1.d":"We analyse your personal and administrative situation.",
+    "reg.step2.t":"We define the path","reg.step2.d":"We identify the best legal option for you.",
+    "reg.step3.t":"We prepare everything","reg.step3.d":"We gather and review every required document.",
+    "reg.step4.t":"We file and follow up","reg.step4.d":"We submit and keep you informed at every step.",
+    "about.eyebrow":"About us","about.role":"Registered Administrative Agent","about.title":"Professional care, in your language",
+    "about.p1":"Gestoría Amana was born from a clear calling: to support migrants and their families with the procedures that shape their everyday life, with the warmth, clarity and respect they deserve.",
+    "about.p2":"Led by Bothaina El Youzghi Kaddoumi, a registered administrative agent (No. 4262) backed by the Col·legi de Gestors Administratius de Catalunya (COGAC), we offer honest, specialised service in Spanish, Catalan, English, Arabic and French.",
+    "about.c1.t":"COGAC registered","about.c1.d":"Accredited, trustworthy professional.",
+    "about.c2.t":"Personal attention","about.c2.d":"Direct service, no middlemen.",
+    "about.c3.t":"In person & online","about.c3.d":"C/ Manuel Falla 40C, Salt (Girona) and online across Spain.",
+    "about.c4.t":"5 languages","about.c4.d":"ES · CA · EN · FR · AR",
+    "stat.1":"% registered & accredited","stat.2":"languages of service","stat.3":"areas of expertise","stat.4n":"All of","stat.4":"Spain, online",
+    "why.eyebrow":"Why choose us","why.title":"An agency that stands by you",
+    "ig.eyebrow":"Community","ig.title":"Follow us on Instagram",
+    "ig.lede":"A close-up look at everyday life at the agency: procedures, appointments and moments we share with you.",
+    "ig.cta":"Follow @gestoria_amana",
+    "ig.caps":["Salt's mayor visited our office ✨","The day we finally opened our doors","Long nights preparing case files ☕","Extraordinary regularization in Spain","2025 Income Tax campaign","Everything we handle at the DGT"],
+    "faq.eyebrow":"Frequently asked questions","faq.title":"Your questions, answered",
+    "contact.eyebrow":"Let's talk","contact.t1":"Book your","contact.t2":"consultation",
+    "contact.lede":"Tell us about your case. We'll reply as soon as possible, with no obligation and in your language.",
+    "contact.phone":"Phone / WhatsApp","contact.email":"Email","contact.loc":"Location",
+    "contact.map":"View on map","contact.hours":"Opening hours","contact.hoursv":"Monday to Friday, 9:00–14:00 and 16:00–20:00",
+    "form.name":"Full name","form.name.ph":"Your full name","form.phone":"Phone","form.phone.ph":"+34 ...",
+    "form.service":"Service","form.opt0":"Select a service","form.opt1":"Immigration & nationality",
+    "form.opt2":"Extraordinary regularization","form.opt3":"Traffic (DGT)","form.opt4":"Labour advice",
+    "form.opt5":"Public administration / translation","form.opt6":"Other","form.opt7":"Income tax & finances","form.msg":"Tell us about your case",
+    "form.msg.ph":"Briefly describe your situation...","form.submit":"Send via WhatsApp",
+    "form.note":"On sending, WhatsApp will open with your message ready. We won't share your data with third parties.",
+    "form.ok":"Thank you! Opening WhatsApp to send your enquiry.",
+    "footer.about":"Registered administrative agency in Salt (Girona). Specialists in immigration, nationality, traffic and public administration.",
+    "footer.serv":"Services","footer.s1":"Immigration","footer.s2":"Nationality","footer.s3":"Traffic (DGT)","footer.s4":"Labour advice","footer.s5":"Public administration","footer.s6":"Income tax",
+    "footer.nav":"Navigation","footer.contact":"Contact","footer.loc":"Salt · Girona, Catalonia","footer.online":"Online across Spain",
+    "footer.rights":"Bothaina El Youzghi Kaddoumi · COGAC registered agent No. 4262",
+    "marquee":["Immigration","Spanish nationality","Traffic · DGT","Labour advice","Income tax","Public administration","Translation","Regularization"],
+    "services":[
+      {icon:"globe",t:"Immigration & nationality",p:"We handle your residence permits and your path to Spanish citizenship.",
+       li:["Residence permits & arraigo","Highly qualified professional","Digital nomads","Spanish nationality"]},
+      {icon:"car",t:"Traffic (DGT)",p:"We're not a consultancy, we're a DGT office.",
+       li:["Instant vehicle ownership transfers","Exchange of foreign driving licences","Vehicle registration & import","Deregistration, duplicates & points check"]},
+      {icon:"briefcase",t:"Labour advice",p:"We advise you on your employment and Social Security matters.",
+       li:["Employment contract review","Payslips","Social Security procedures"]},
+      {icon:"receipt",t:"Income tax & finances",p:"We support you with your Income Tax Return and other tax procedures.",
+       li:["Income Tax Return (IRPF)","Draft download & review","IRPF calculation & optimisation","Procedures before the Tax Agency"]},
+      {icon:"building",t:"Public administration & translation",p:"Specialised handling before every administration.",
+       li:["Town & comarcal councils","Generalitat de Catalunya & Oficina de Treball","State administration","Document translation"]},
+      {icon:"search",t:"Job-search support",p:"We guide you in your search for work in Spain.",
+       li:["Support in your job search","Guidance & documentation","Related procedures"]},
+      {icon:"shield",t:"Extraordinary regularization",p:"We study your case and guide you step by step.",
+       li:["Free initial assessment","Requirements review","Submission & follow-up"]}
+    ],
+    "why":[
+      {icon:"shield",t:"Registered professional",p:"We work with COGAC backing. Real reliability and guarantees."},
+      {icon:"heart",t:"A human touch",p:"We know what each procedure means. We treat you with warmth and respect."},
+      {icon:"globe",t:"Service in your language",p:"Spanish, Catalan, English, Arabic and French, so everything is clear."},
+      {icon:"clock",t:"Full transparency",p:"Clear timelines, no surprises, with follow-up on your file."}
+    ],
+    "faq":[
+      {q:"Do you only serve Girona?",a:"Our office is at C/ Manuel Falla 40C, 17190, Salt (Girona), open Monday to Friday from 9:00 to 14:00 and 16:00 to 20:00. We also assist clients online across Spain by phone, WhatsApp or video call."},
+      {q:"In which languages can I be assisted?",a:"We assist you in Spanish, Catalan, English, Arabic and French, so you understand every step of your procedure clearly."},
+      {q:"Is the first consultation free?",a:"We provide an initial, no-obligation assessment of your case. Tell us your situation and we'll guide you on the available options."},
+      {q:"Are you an official agency?",a:"Yes. Bothaina El Youzghi Kaddoumi is a registered administrative agent (No. 4262), backed by the Col·legi de Gestors Administratius de Catalunya (COGAC)."},
+      {q:"What documents do I need?",a:"It depends on each procedure. In the initial consultation we review your situation and tell you exactly which documents to gather."}
+    ]
+  },
+
+  ar: {
+    "top.loc":"سالت · جيرونا · عبر الإنترنت في كل إسبانيا",
+    "top.hours":"الإثنين-الجمعة 9:00-14:00 و16:00-20:00",
+    "nav.services":"الخدمات","nav.reg":"التسوية","nav.about":"من نحن","nav.ig":"إنستغرام",
+    "nav.process":"كيف نعمل","nav.faq":"أسئلة شائعة","nav.contact":"اتصل بنا","nav.cta":"استشارة مجانية",
+    "hero.eyebrow":"مكتب إداري معتمد · كتالونيا",
+    "hero.t1":"طريقك القانوني في","hero.t2":"إسبانيا","hero.t3":"بين أيدٍ","hero.t4":"خبيرة",
+    "hero.lede":"نرافق الأفراد والعائلات في معاملات شؤون الأجانب والجنسية والمرور والإدارة العامة. قُرب وخبرة مهنية وخدمة بلغتك.",
+    "hero.badge1":"مديرة إدارية معتمدة","hero.badge2":"بدعم من COGAC","hero.badge3":"خدمة بعدة لغات",
+    "hero.cta1":"احجز استشارتك","hero.cta2":"عرض الخدمات","hero.trust":"نخدمك بـ 5 لغات",
+    "herocard.title":"مكتب أمانة","herocard.role":"مديرة إدارية معتمدة · COGAC رقم 4262",
+    "herocard.l1":"الإقامة والتجذّر والجنسية الإسبانية","herocard.l2":"تبديل رخص القيادة ومعاملات المرور",
+    "herocard.l3":"العمل، الإدارة، والضرائب",
+    "svc.eyebrow":"خدماتنا","svc.title":"كل ما تحتاجه في مكان واحد",
+    "svc.lede":"نتولّى معاملاتك من البداية إلى النهاية، بمتابعة شخصية ومواعيد واضحة.",
+    "reg.eyebrow":"حملة مميّزة","reg.t1":"تسوية أوضاع","reg.t2":"المهاجرين الاستثنائية","reg.t3":"في إسبانيا",
+    "reg.p":"ندرس حالتك ونرافقك خطوة بخطوة في إجراءات التسوية. نحلّل وضعك، نُعدّ الوثائق، ونرشدك بكامل الشفافية.",
+    "reg.li1":"تقييم أولي مجاني وبدون التزام","reg.li2":"مراجعة الشروط ووثائقك",
+    "reg.li3":"تقديم الملف ومتابعته","reg.cta":"استشر بشأن حالتك اليوم","reg.steps.title":"كيف نساعدك",
+    "reg.step1.t":"نستمع إلى حالتك","reg.step1.d":"نحلّل وضعك الشخصي والإداري.",
+    "reg.step2.t":"نحدّد المسار","reg.step2.d":"نختار أفضل خيار قانوني لك.",
+    "reg.step3.t":"نُجهّز كل شيء","reg.step3.d":"نجمع ونراجع كل وثيقة لازمة.",
+    "reg.step4.t":"نقدّم ونتابع","reg.step4.d":"نقدّم الملف ونبقيك على اطلاع دائم.",
+    "about.eyebrow":"من نحن","about.role":"مديرة إدارية معتمدة","about.title":"خدمة قريبة ومهنية، بلغتك",
+    "about.p1":"وُلد مكتب أمانة من رسالة واضحة: مرافقة المهاجرين وعائلاتهم في المعاملات التي تشكّل حياتهم اليومية، بالقُرب والوضوح والاحترام الذي يستحقونه.",
+    "about.p2":"بإدارة بثينة اليوزغي قدومي، مديرة إدارية معتمدة (رقم 4262) بدعم من نقابة المديرين الإداريين في كتالونيا (COGAC)، نقدّم خدمة صادقة ومتخصصة بالإسبانية والكتالانية والإنجليزية والعربية والفرنسية.",
+    "about.c1.t":"معتمدة لدى COGAC","about.c1.d":"مهنية موثوقة ومعتمدة.",
+    "about.c2.t":"خدمة شخصية","about.c2.d":"تعامل مباشر دون وسطاء.",
+    "about.c3.t":"حضوريًا وعبر الإنترنت","about.c3.d":"C/ Manuel Falla 40C، سالت (جيرونا) وأونلاين في كل إسبانيا.",
+    "about.c4.t":"5 لغات","about.c4.d":"ES · CA · EN · FR · AR",
+    "stat.1":"٪ معتمدة ومرخّصة","stat.2":"لغات للخدمة","stat.3":"مجالات تخصص","stat.4n":"كل","stat.4":"إسبانيا، أونلاين",
+    "why.eyebrow":"لماذا تختارنا","why.title":"مكتب يقف إلى جانبك",
+    "ig.eyebrow":"المجتمع","ig.title":"تابعونا على إنستغرام",
+    "ig.lede":"نظرة قريبة على يومياتنا في المكتب: المعاملات والمواعيد واللحظات التي نشاركها معكم.",
+    "ig.cta":"تابعنا @gestoria_amana",
+    "ig.caps":["زارت عمدة سالت مكتبنا ✨","اليوم الذي افتتحنا فيه مكتبنا أخيرًا","ليالٍ طويلة في تحضير الملفات ☕","التسوية الاستثنائية في إسبانيا","حملة الضريبة على الدخل 2025","كل ما ندبّره في مديرية المرور (DGT)"],
+    "faq.eyebrow":"أسئلة شائعة","faq.title":"نجيب عن استفساراتك",
+    "contact.eyebrow":"لنتحدّث","contact.t1":"احجز","contact.t2":"استشارتك",
+    "contact.lede":"أخبرنا عن حالتك. نردّ في أقرب وقت، دون التزام وبلغتك.",
+    "contact.phone":"الهاتف / واتساب","contact.email":"البريد الإلكتروني","contact.loc":"الموقع",
+    "contact.map":"عرض على الخريطة","contact.hours":"ساعات العمل","contact.hoursv":"من الإثنين إلى الجمعة، من 9:00 إلى 14:00 ومن 16:00 إلى 20:00",
+    "form.name":"الاسم الكامل","form.name.ph":"اسمك الكامل","form.phone":"الهاتف","form.phone.ph":"+34 ...",
+    "form.service":"الخدمة","form.opt0":"اختر خدمة","form.opt1":"شؤون الأجانب والجنسية",
+    "form.opt2":"التسوية الاستثنائية","form.opt3":"المرور (DGT)","form.opt4":"استشارة عمالية",
+    "form.opt5":"الإدارة العامة / الترجمة","form.opt6":"أخرى","form.opt7":"الضريبة على الدخل","form.msg":"أخبرنا عن حالتك",
+    "form.msg.ph":"صِف وضعك باختصار...","form.submit":"إرسال عبر واتساب",
+    "form.note":"عند الإرسال سيُفتح واتساب برسالتك جاهزة. لن نشارك بياناتك مع أي طرف ثالث.",
+    "form.ok":"شكرًا لك! جارٍ فتح واتساب لإرسال استفسارك.",
+    "footer.about":"مكتب إداري معتمد في سالت (جيرونا). متخصصون في شؤون الأجانب والجنسية والمرور والإدارة العامة.",
+    "footer.serv":"الخدمات","footer.s1":"شؤون الأجانب","footer.s2":"الجنسية","footer.s3":"المرور (DGT)","footer.s4":"استشارة عمالية","footer.s5":"الإدارة العامة","footer.s6":"الضريبة على الدخل",
+    "footer.nav":"تصفّح","footer.contact":"اتصل بنا","footer.loc":"سالت · جيرونا، كتالونيا","footer.online":"أونلاين في كل إسبانيا",
+    "footer.rights":"بثينة اليوزغي قدومي · مديرة معتمدة لدى COGAC رقم 4262",
+    "marquee":["شؤون الأجانب","الجنسية الإسبانية","المرور · DGT","استشارة عمالية","الضريبة على الدخل","الإدارة العامة","الترجمة","التسوية"],
+    "services":[
+      {icon:"globe",t:"شؤون الأجانب والجنسية",p:"نتولّى إقامتك وطريقك نحو الجنسية الإسبانية.",
+       li:["تصاريح الإقامة والتجذّر","المهني المؤهّل تأهيلًا عاليًا","الرحّل الرقميون","الجنسية الإسبانية"]},
+      {icon:"car",t:"المرور (DGT)",p:"لسنا مكتب استشارات، بل مكتب لمعاملات المرور (DGT).",
+       li:["تحويل ملكية المركبات في الحين","تبديل رخص القيادة الأجنبية","تسجيل واستيراد المركبات","إلغاء التسجيل والنسخ المكررة واستعلام النقاط"]},
+      {icon:"briefcase",t:"استشارة عمالية",p:"نقدّم لك المشورة في علاقتك العمالية والضمان الاجتماعي.",
+       li:["مراجعة عقود العمل","كشوف الرواتب","معاملات الضمان الاجتماعي"]},
+      {icon:"receipt",t:"الضريبة على الدخل والشؤون المالية",p:"نرافقك في تقديم الإقرار الضريبي على الدخل وباقي المعاملات الضريبية.",
+       li:["الإقرار الضريبي على الدخل (IRPF)","تحميل ومراجعة المسودة","حساب وتحسين الضريبة (IRPF)","المعاملات أمام الوكالة الضريبية"]},
+      {icon:"building",t:"الإدارة العامة والترجمة",p:"إدارة متخصصة أمام جميع الجهات الإدارية.",
+       li:["البلديات والمجالس الإقليمية","حكومة كتالونيا ومكتب العمل","الإدارة العامة للدولة","ترجمة الوثائق"]},
+      {icon:"search",t:"المرافقة في البحث عن عمل",p:"نوجّهك في بحثك عن عمل في إسبانيا.",
+       li:["الدعم في البحث عن عمل","التوجيه والوثائق","المعاملات المرتبطة"]},
+      {icon:"shield",t:"التسوية الاستثنائية",p:"ندرس حالتك ونرشدك خطوة بخطوة.",
+       li:["تقييم أولي مجاني","مراجعة الشروط","التقديم والمتابعة"]}
+    ],
+    "why":[
+      {icon:"shield",t:"مهنية معتمدة",p:"نعمل بدعم من COGAC. جدّية وضمانات حقيقية."},
+      {icon:"heart",t:"تعامل إنساني",p:"نعرف ما تعنيه كل معاملة. نعاملك بقُرب واحترام."},
+      {icon:"globe",t:"خدمة بلغتك",p:"بالإسبانية والكتالانية والإنجليزية والعربية والفرنسية ليكون كل شيء واضحًا."},
+      {icon:"clock",t:"شفافية كاملة",p:"مواعيد واضحة، بلا مفاجآت، مع متابعة ملفّك."}
+    ],
+    "faq":[
+      {q:"هل تخدمون جيرونا فقط؟",a:"يقع مكتبنا في C/ Manuel Falla 40C، 17190، سالت (جيرونا)، ويعمل من الإثنين إلى الجمعة من 9:00 إلى 14:00 ومن 16:00 إلى 20:00. كما نقدّم خدماتنا أونلاين في جميع إسبانيا عبر الهاتف أو واتساب أو مكالمة فيديو."},
+      {q:"بأي لغات يمكن خدمتي؟",a:"نخدمك بالإسبانية والكتالانية والإنجليزية والعربية والفرنسية، لتفهم كل خطوة من معاملتك بوضوح تام."},
+      {q:"هل الاستشارة الأولى مجانية؟",a:"نقدّم تقييمًا أوليًا لحالتك دون التزام. أخبرنا بوضعك ونوجّهك بشأن الخيارات المتاحة."},
+      {q:"هل أنتم مكتب رسمي؟",a:"نعم. بثينة اليوزغي قدومي مديرة إدارية معتمدة (رقم 4262)، بدعم من نقابة المديرين الإداريين في كتالونيا (COGAC)."},
+      {q:"ما الوثائق التي أحتاجها؟",a:"يعتمد ذلك على كل معاملة. في الاستشارة الأولى نراجع وضعك ونحدّد لك بالضبط الوثائق التي عليك تجهيزها."}
+    ]
+  },
+
+  fr: {
+    "top.loc":"Salt · Gérone · En ligne dans toute l'Espagne",
+    "top.hours":"Lun-Ven 9h-14h et 16h-20h",
+    "nav.services":"Services","nav.reg":"Régularisation","nav.about":"Qui sommes-nous","nav.ig":"Instagram",
+    "nav.process":"Comment nous travaillons","nav.faq":"Questions","nav.contact":"Contact","nav.cta":"Consultation gratuite",
+    "hero.eyebrow":"Cabinet de gestion administrative agréé · Catalogne",
+    "hero.t1":"Votre chemin légal en","hero.t2":"Espagne","hero.t3":"entre des mains","hero.t4":"expertes",
+    "hero.lede":"Nous accompagnons les personnes et les familles dans leurs démarches d'immigration, de nationalité, de circulation et d'administration publique. Proximité, rigueur professionnelle et accueil dans votre langue.",
+    "hero.badge1":"Gestionnaire agréée","hero.badge2":"Soutenue par le COGAC","hero.badge3":"Service multilingue",
+    "hero.cta1":"Réservez votre consultation","hero.cta2":"Voir les services","hero.trust":"Nous vous accueillons en 5 langues",
+    "herocard.title":"Gestoría Amana","herocard.role":"Gestionnaire administrative agréée · COGAC n° 4262",
+    "herocard.l1":"Résidence, arraigo et nationalité espagnole","herocard.l2":"Échange de permis et démarches DGT",
+    "herocard.l3":"Travail, administration et impôts",
+    "svc.eyebrow":"Nos services","svc.title":"Tout ce dont vous avez besoin, au même endroit",
+    "svc.lede":"Nous gérons vos démarches du début à la fin, avec un suivi personnalisé et des délais clairs.",
+    "reg.eyebrow":"Campagne phare","reg.t1":"Régularisation","reg.t2":"extraordinaire","reg.t3":"en Espagne",
+    "reg.p":"Nous étudions votre cas et vous accompagnons pas à pas dans les démarches de régularisation. Nous analysons votre situation, préparons les documents et vous guidons en toute transparence.",
+    "reg.li1":"Évaluation initiale gratuite et sans engagement","reg.li2":"Vérification des conditions requises et de vos documents",
+    "reg.li3":"Dépôt et suivi du dossier","reg.cta":"Faites étudier votre cas dès aujourd'hui","reg.steps.title":"Comment nous vous aidons",
+    "reg.step1.t":"Nous écoutons votre cas","reg.step1.d":"Nous analysons votre situation personnelle et administrative.",
+    "reg.step2.t":"Nous définissons la voie à suivre","reg.step2.d":"Nous identifions la meilleure option légale pour vous.",
+    "reg.step3.t":"Nous préparons tout","reg.step3.d":"Nous réunissons et vérifions chaque document nécessaire.",
+    "reg.step4.t":"Nous déposons et suivons","reg.step4.d":"Nous soumettons le dossier et vous tenons informé à chaque étape.",
+    "about.eyebrow":"Qui sommes-nous","about.role":"Gestionnaire Administrative Agréée","about.title":"Proximité professionnelle, dans votre langue",
+    "about.p1":"Gestoría Amana est née d'une vocation claire : accompagner les personnes migrantes et leurs familles dans les démarches qui marquent leur quotidien, avec la proximité, la clarté et le respect qu'elles méritent.",
+    "about.p2":"Dirigée par Bothaina El Youzghi Kaddoumi, gestionnaire administrative agréée (n° 4262) avec le soutien du Col·legi de Gestors Administratius de Catalunya (COGAC), nous offrons un service honnête et spécialisé, en espagnol, catalan, anglais, arabe et français.",
+    "about.c1.t":"Agréée COGAC","about.c1.d":"Professionnelle accréditée et de confiance.",
+    "about.c2.t":"Accueil personnalisé","about.c2.d":"Relation directe, sans intermédiaires.",
+    "about.c3.t":"En personne et en ligne","about.c3.d":"C/ Manuel Falla 40C, Salt (Gérone) et en ligne dans toute l'Espagne.",
+    "about.c4.t":"5 langues","about.c4.d":"ES · CA · EN · FR · AR",
+    "stat.1":"% agréée et accréditée","stat.2":"langues parlées","stat.3":"domaines de spécialité","stat.4n":"Toute","stat.4":"l'Espagne, en ligne",
+    "why.eyebrow":"Pourquoi nous choisir","why.title":"Un cabinet qui se mobilise pour vous",
+    "ig.eyebrow":"Communauté","ig.title":"Suivez-nous sur Instagram",
+    "ig.lede":"Un regard proche sur le quotidien du cabinet : démarches, rendez-vous et moments que nous partageons avec vous.",
+    "ig.cta":"Suivre @gestoria_amana",
+    "ig.caps":["La maire de Salt a visité notre bureau ✨","Le jour où nous avons enfin ouvert nos portes","De longues nuits à préparer des dossiers ☕","Régularisation extraordinaire en Espagne","Campagne de la déclaration de revenus 2025","Tout ce que nous gérons à la DGT"],
+    "faq.eyebrow":"Questions fréquentes","faq.title":"Nous répondons à vos questions",
+    "contact.eyebrow":"Parlons-en","contact.t1":"Réservez votre","contact.t2":"consultation",
+    "contact.lede":"Racontez-nous votre cas. Nous vous répondons au plus vite, sans engagement et dans votre langue.",
+    "contact.phone":"Téléphone / WhatsApp","contact.email":"Adresse e-mail","contact.loc":"Adresse",
+    "contact.map":"Voir sur la carte","contact.hours":"Horaires d'ouverture","contact.hoursv":"Du lundi au vendredi, de 9h à 14h et de 16h à 20h",
+    "form.name":"Nom et prénom","form.name.ph":"Votre nom complet","form.phone":"Téléphone","form.phone.ph":"+34 ...",
+    "form.service":"Service","form.opt0":"Choisissez un service","form.opt1":"Immigration et nationalité",
+    "form.opt2":"Régularisation extraordinaire","form.opt3":"Circulation (DGT)","form.opt4":"Conseil en droit du travail",
+    "form.opt5":"Administration publique / traduction","form.opt6":"Autre","form.opt7":"Impôts et fiscalité","form.msg":"Racontez-nous votre cas",
+    "form.msg.ph":"Décrivez brièvement votre situation...","form.submit":"Envoyer via WhatsApp",
+    "form.note":"En envoyant, WhatsApp s'ouvrira avec votre message prêt. Nous ne partagerons pas vos données avec des tiers.",
+    "form.ok":"Merci ! Ouverture de WhatsApp pour envoyer votre demande.",
+    "footer.about":"Cabinet de gestion administrative agréé à Salt (Gérone). Spécialistes en immigration, nationalité, circulation et administration publique.",
+    "footer.serv":"Services","footer.s1":"Immigration","footer.s2":"Nationalité","footer.s3":"Circulation (DGT)","footer.s4":"Conseil en droit du travail","footer.s5":"Administration publique","footer.s6":"Impôts et fiscalité",
+    "footer.nav":"Navigation","footer.contact":"Contact","footer.loc":"Salt · Gérone, Catalogne","footer.online":"En ligne dans toute l'Espagne",
+    "footer.rights":"Bothaina El Youzghi Kaddoumi · Gestionnaire agréée COGAC n° 4262",
+    "marquee":["Immigration","Nationalité espagnole","Circulation · DGT","Conseil en droit du travail","Impôts et fiscalité","Administration publique","Traduction","Régularisation"],
+    "services":[
+      {icon:"globe",t:"Immigration et nationalité",p:"Nous gérons votre permis de résidence et votre chemin vers la nationalité espagnole.",
+       li:["Permis de résidence et arraigo","Professionnel hautement qualifié","Nomades numériques","Nationalité espagnole"]},
+      {icon:"car",t:"Circulation (DGT)",p:"Nous ne sommes pas un cabinet de conseil, nous sommes un bureau DGT.",
+       li:["Transferts de véhicules dans l'instant","Échange de permis de conduire étrangers","Immatriculation et importation de véhicules","Radiations, duplicatas et solde de points"]},
+      {icon:"briefcase",t:"Conseil en droit du travail",p:"Nous vous conseillons dans votre relation de travail et avec la Sécurité sociale.",
+       li:["Vérification de contrats de travail","Bulletins de salaire","Démarches auprès de la Sécurité sociale"]},
+      {icon:"receipt",t:"Impôts et fiscalité",p:"Nous vous accompagnons dans votre déclaration de revenus et autres démarches fiscales.",
+       li:["Déclaration de revenus (IRPF)","Téléchargement et vérification du brouillon","Calcul et optimisation de l'IRPF","Démarches auprès de l'Agence fiscale"]},
+      {icon:"building",t:"Administration publique et traduction",p:"Gestion spécialisée auprès de toutes les administrations.",
+       li:["Mairies et conseils de comarque","Generalitat de Catalogne et Office de l'emploi","Administration générale de l'État","Traduction de documents"]},
+      {icon:"search",t:"Accompagnement vers l'emploi",p:"Nous vous orientons dans votre recherche d'emploi en Espagne.",
+       li:["Soutien dans la recherche d'emploi","Orientation et documentation","Démarches associées"]},
+      {icon:"shield",t:"Régularisation extraordinaire",p:"Nous étudions votre cas et vous guidons pas à pas.",
+       li:["Évaluation initiale gratuite","Vérification des conditions requises","Dépôt et suivi"]}
+    ],
+    "why":[
+      {icon:"shield",t:"Professionnelle agréée",p:"Nous travaillons avec le soutien du COGAC. Sérieux et garanties réelles."},
+      {icon:"heart",t:"Une relation humaine",p:"Nous savons ce que représente chaque démarche. Nous vous traitons avec proximité et respect."},
+      {icon:"globe",t:"Service dans votre langue",p:"Espagnol, catalan, anglais, arabe et français, pour que tout soit clair."},
+      {icon:"clock",t:"Transparence totale",p:"Délais clairs, sans surprises, avec suivi de votre dossier."}
+    ],
+    "faq":[
+      {q:"Travaillez-vous uniquement à Gérone ?",a:"Notre bureau se trouve C/ Manuel Falla 40C, 17190, Salt (Gérone), ouvert du lundi au vendredi de 9h à 14h et de 16h à 20h. Nous proposons aussi un accompagnement en ligne dans toute l'Espagne par téléphone, WhatsApp ou appel vidéo."},
+      {q:"Dans quelles langues puis-je être accueilli(e) ?",a:"Nous vous accueillons en espagnol, catalan, anglais, arabe et français, pour que chaque étape de votre démarche soit parfaitement claire."},
+      {q:"La première consultation est-elle gratuite ?",a:"Nous réalisons une évaluation initiale de votre cas sans engagement. Expliquez-nous votre situation et nous vous orienterons sur les options disponibles."},
+      {q:"Êtes-vous un cabinet officiel ?",a:"Oui. Bothaina El Youzghi Kaddoumi est gestionnaire administrative agréée (n° 4262), avec le soutien du Col·legi de Gestors Administratius de Catalunya (COGAC)."},
+      {q:"De quels documents ai-je besoin ?",a:"Cela dépend de chaque démarche. Lors de la consultation initiale, nous examinons votre situation et vous indiquons exactement quels documents réunir."}
+    ]
+  }
+};
+const LANG_LABELS={es:"Español",ca:"Català",en:"English",ar:"العربية",fr:"Français"};
+
+</script>
+<script>
+/* ===== Gestoría Amana — app.js ===== */
+(function(){
+  const ICONS = {
+    globe:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>',
+    car:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M5 17h14M6.5 17v2M17.5 17v2M3 13l1.5-5A2 2 0 0 1 6.4 6.5h11.2A2 2 0 0 1 19.5 8L21 13M3 13h18v3a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z"/><circle cx="7" cy="13.5" r="1"/><circle cx="17" cy="13.5" r="1"/></svg>',
+    briefcase:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M2 13h20"/></svg>',
+    building:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 21h18M5 21V5a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v16M15 21V9h4a2 2 0 0 1 2 2v10M8 7h2M8 11h2M8 15h2"/></svg>',
+    search:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>',
+    shield:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 2 4 5v6c0 5.5 3.8 10.7 8 12 4.2-1.3 8-6.5 8-12V5l-8-3z"/><path d="m9 12 2 2 4-4"/></svg>',
+    heart:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg>',
+    clock:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>',
+    receipt:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M6 2h12a1 1 0 0 1 1 1v18l-2.5-1.5L14 21l-2.5-1.5L9 21l-2.5-1.5L4 21V3a1 1 0 0 1 1-1z"/><path d="M8 7h8M8 11h8M8 15h5"/></svg>'
+  };
+  const check = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 5 5L20 7"/></svg>';
+  const igIcon = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>';
+
+  const IG_POSTS = [
+    {img:"img/ig-team-alcaldesa.jpg", href:"https://www.instagram.com/gestoria_amana/p/DYmWl4UNfA7/"},
+    {img:"img/ig-horari.jpg", href:"https://www.instagram.com/gestoria_amana/p/DVLqxXTjTk-/"},
+    {img:"img/ig-coffee.jpg", href:"https://www.instagram.com/gestoria_amana/reel/DXH4me5DYuK/"},
+    {img:"img/ig-regularizacion.jpg", href:"https://www.instagram.com/gestoria_amana/p/DU3zG8-jaHi/"},
+    {img:"img/ig-renta.jpg", href:"https://www.instagram.com/gestoria_amana/p/DW0tpZzjUHe/"},
+    {img:"img/ig-dgt.jpg", href:"https://www.instagram.com/gestoria_amana/p/DYkgn0WtqGa/"}
+  ];
+
+  let current = 'es';
+
+  function t(key){ return (I18N[current] && I18N[current][key]) || (I18N.es[key]) || key; }
+
+  /* ---- dynamic blocks ---- */
+  function renderMarquee(){
+    const items = t('marquee');
+    const row = items.map(x=>`<span>${x}</span>`).join('');
+    document.getElementById('stripTrack').innerHTML = row + row; // duplicate for seamless loop
+  }
+  function renderServices(){
+    const data = t('services');
+    document.getElementById('svcGrid').innerHTML = data.map((s,i)=>`
+      <article class="svc reveal" data-d="${(i%3)+1}">
+        <div class="svc-icon">${ICONS[s.icon]||''}</div>
+        <h3>${s.t}</h3>
+        <p>${s.p}</p>
+        <ul>${s.li.map(l=>`<li>${check}<span>${l}</span></li>`).join('')}</ul>
+      </article>`).join('');
+  }
+  function renderWhy(){
+    const data = t('why');
+    document.getElementById('whyGrid').innerHTML = data.map((w,i)=>`
+      <div class="why-card reveal" data-d="${(i%4)}">
+        <div class="ic">${ICONS[w.icon]||''}</div>
+        <h4>${w.t}</h4><p>${w.p}</p>
+      </div>`).join('');
+  }
+  function renderFaq(){
+    const data = t('faq');
+    document.getElementById('faqList').innerHTML = data.map(f=>`
+      <div class="faq-item">
+        <div class="faq-q">${f.q}<span class="pm">+</span></div>
+        <div class="faq-a"><div class="faq-a-inner">${f.a}</div></div>
+      </div>`).join('');
+    bindFaq();
+  }
+  function renderInstagram(){
+    const caps = t('ig.caps');
+    document.getElementById('igGrid').innerHTML = IG_POSTS.map((p,i)=>`
+      <a class="ig-tile" href="${p.href}" target="_blank" rel="noopener">
+        <img src="${p.img}" alt="${(caps&&caps[i])||'Gestoría Amana en Instagram'}" loading="lazy">
+        <span class="ig-ic">${igIcon}</span>
+        <span class="cap">${(caps&&caps[i])||''}</span>
+      </a>`).join('');
+  }
+
+  /* ---- apply text translations ---- */
+  function applyI18n(){
+    document.querySelectorAll('[data-i18n]').forEach(el=>{
+      const k = el.getAttribute('data-i18n'); const v = t(k);
+      if(typeof v === 'string') el.textContent = v;
+    });
+    document.querySelectorAll('[data-i18n-ph]').forEach(el=>{
+      const v = t(el.getAttribute('data-i18n-ph')); if(typeof v==='string') el.setAttribute('placeholder', v);
+    });
+  }
+
+  function setLang(lang){
+    current = lang;
+    const rtl = lang==='ar';
+    document.documentElement.lang = lang;
+    document.documentElement.dir = rtl ? 'rtl' : 'ltr';
+    document.getElementById('langLabel').textContent = LANG_LABELS[lang];
+    document.querySelectorAll('#langMenu button').forEach(b=>b.classList.toggle('active', b.dataset.lang===lang));
+    applyI18n();
+    renderMarquee(); renderServices(); renderWhy(); renderFaq(); renderInstagram();
+    observeReveals();
+  }
+
+  /* ---- language menu ---- */
+  const langBtn=document.getElementById('langBtn'), langMenu=document.getElementById('langMenu');
+  langBtn.addEventListener('click',e=>{e.stopPropagation();langMenu.classList.toggle('open')});
+  document.addEventListener('click',()=>langMenu.classList.remove('open'));
+  document.querySelectorAll('#langMenu button').forEach(b=>{
+    b.addEventListener('click',()=>{ setLang(b.dataset.lang); langMenu.classList.remove('open'); });
+  });
+
+  /* ---- header scroll ---- */
+  const header=document.getElementById('header');
+  window.addEventListener('scroll',()=>{ header.classList.toggle('scrolled', window.scrollY>20); },{passive:true});
+
+  /* ---- back-to-top fab ---- */
+  const fabTop=document.getElementById('fabTop');
+  window.addEventListener('scroll',()=>{ fabTop.classList.toggle('show', window.scrollY>420); },{passive:true});
+  fabTop.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
+
+  /* ---- mobile menu ---- */
+  const burger=document.getElementById('burger'), mm=document.getElementById('mobileMenu'), ov=document.getElementById('overlay');
+  function toggleMenu(open){ burger.classList.toggle('open',open); mm.classList.toggle('open',open); ov.classList.toggle('open',open); }
+  burger.addEventListener('click',()=>toggleMenu(!mm.classList.contains('open')));
+  ov.addEventListener('click',()=>toggleMenu(false));
+  mm.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>toggleMenu(false)));
+
+  /* ---- reveal on scroll ---- */
+  let io;
+  function observeReveals(){
+    if(io) io.disconnect();
+    io=new IntersectionObserver((entries)=>{
+      entries.forEach(en=>{ if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target);} });
+    },{threshold:.12, rootMargin:'0px 0px -40px 0px'});
+    document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+  }
+
+  /* ---- counters ---- */
+  function runCounters(){
+    document.querySelectorAll('[data-count]').forEach(el=>{
+      const target=+el.dataset.count; let n=0; const step=Math.max(1,Math.ceil(target/40));
+      const tick=()=>{ n+=step; if(n>=target){el.textContent=target;} else {el.textContent=n; requestAnimationFrame(tick);} };
+      const ob=new IntersectionObserver((e)=>{ if(e[0].isIntersecting){tick(); ob.disconnect();} },{threshold:.5});
+      ob.observe(el);
+    });
+  }
+
+  /* ---- faq accordion ---- */
+  function bindFaq(){
+    document.querySelectorAll('.faq-item').forEach(item=>{
+      const q=item.querySelector('.faq-q'), a=item.querySelector('.faq-a');
+      q.addEventListener('click',()=>{
+        const open=item.classList.contains('open');
+        document.querySelectorAll('.faq-item').forEach(o=>{o.classList.remove('open');o.querySelector('.faq-a').style.maxHeight=null;});
+        if(!open){ item.classList.add('open'); a.style.maxHeight=a.scrollHeight+'px'; }
+      });
+    });
+  }
+
+  /* ---- form -> WhatsApp ---- */
+  document.getElementById('formBtn').addEventListener('click',()=>{
+    const name=document.getElementById('fName').value.trim();
+    const phone=document.getElementById('fPhone').value.trim();
+    const svc=document.getElementById('fService');
+    const service=svc.selectedIndex>0?svc.options[svc.selectedIndex].text:'';
+    const msg=document.getElementById('fMsg').value.trim();
+    const L={es:{g:"Hola, soy",s:"Servicio",p:"Teléfono",m:"Mensaje"},ca:{g:"Hola, soc",s:"Servei",p:"Telèfon",m:"Missatge"},
+             en:{g:"Hello, I'm",s:"Service",p:"Phone",m:"Message"},ar:{g:"مرحبًا، أنا",s:"الخدمة",p:"الهاتف",m:"الرسالة"},
+             fr:{g:"Bonjour, je suis",s:"Service",p:"Téléphone",m:"Message"}}[current];
+    let body=`${L.g} ${name||'—'}.`;
+    if(service) body+=`\n${L.s}: ${service}`;
+    if(phone) body+=`\n${L.p}: ${phone}`;
+    if(msg) body+=`\n${L.m}: ${msg}`;
+    const ok=document.getElementById('formOk'); ok.classList.add('show');
+    setTimeout(()=>{ window.open('https://wa.me/34641076292?text='+encodeURIComponent(body),'_blank'); },500);
+    setTimeout(()=>ok.classList.remove('show'),4000);
+  });
+
+  /* ---- init ---- */
+  document.getElementById('year').textContent=new Date().getFullYear();
+  setLang('es');
+  observeReveals();
+  runCounters();
+})();
+
+</script>
+</body>
+</html>
