@@ -155,6 +155,16 @@ h1,h2,h3,h4{font-family:var(--serif);font-weight:400;line-height:1.08;letter-spa
 .mobile-menu a{font-family:var(--serif);font-size:1.5rem;color:var(--ink);padding:.6rem 0;border-bottom:1px solid var(--line);transition:.3s}
 [dir="rtl"] .mobile-menu a{font-family:var(--ar-serif)}
 .mobile-menu a:hover{color:var(--wine);padding-inline-start:.5rem}
+.mobile-lang{margin-top:1.4rem;padding-top:1.4rem;border-top:1px solid var(--line)}
+.mobile-lang-title{display:block;font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);font-weight:800;margin-bottom:.8rem}
+[dir="rtl"] .mobile-lang-title{letter-spacing:.04em}
+.mobile-lang-options{display:grid;grid-template-columns:repeat(2,1fr);gap:.55rem}
+.mobile-lang-options button{min-height:44px;display:flex;align-items:center;gap:.55rem;background:var(--cream);border:1px solid var(--line);
+  border-radius:999px;padding:.55rem .75rem;color:var(--ink);font-family:var(--sans);font-weight:800;font-size:.82rem;cursor:pointer;transition:.25s}
+[dir="rtl"] .mobile-lang-options button{font-family:var(--ar-sans)}
+.mobile-lang-options button.active{background:var(--wine);border-color:var(--wine);color:#fff}
+.mobile-lang-options .check{margin-inline-start:auto;width:13px;height:13px;color:var(--gold-light);opacity:0}
+.mobile-lang-options button.active .check{opacity:1}
 .menu-overlay{position:fixed;inset:0;background:rgba(29,26,23,.4);backdrop-filter:blur(2px);z-index:65;opacity:0;visibility:hidden;transition:.4s}
 .menu-overlay.open{opacity:1;visibility:visible}
 
@@ -463,6 +473,9 @@ h1,h2,h3,h4{font-family:var(--serif);font-weight:400;line-height:1.08;letter-spa
   .burger{display:flex}
   .nav-cta .btn-ghost{display:none}
 }
+@media(max-width:760px){
+  .topbar{display:none}
+}
 @media(max-width:560px){
   .wrap{width:min(1180px,calc(100vw - 2rem))}
   .form-row{grid-template-columns:1fr}
@@ -557,6 +570,16 @@ h1,h2,h3,h4{font-family:var(--serif);font-weight:400;line-height:1.08;letter-spa
   <a href="#instagram" data-i18n="nav.ig">Instagram</a>
   <a href="#faq" data-i18n="nav.faq">Preguntas</a>
   <a href="#contacto" data-i18n="nav.contact">Contacto</a>
+  <div class="mobile-lang" aria-label="Selector de idioma">
+    <span class="mobile-lang-title" data-i18n="mobile.lang">Idioma</span>
+    <div class="mobile-lang-options">
+      <button data-lang="es" class="active"><span class="flag-ic"><svg viewBox="0 0 20 14" width="20" height="14"><rect width="20" height="14" fill="#c60b1e"/><rect y="3.5" width="20" height="7" fill="#ffc400"/></svg></span> ES <svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="m5 12 5 5L20 7"/></svg></button>
+      <button data-lang="ca"><span class="flag-ic"><svg viewBox="0 0 20 14" width="20" height="14"><rect width="20" height="14" fill="#ffce00"/><rect y="1.56" width="20" height="1.56" fill="#da121a"/><rect y="4.67" width="20" height="1.56" fill="#da121a"/><rect y="7.78" width="20" height="1.56" fill="#da121a"/><rect y="10.89" width="20" height="1.56" fill="#da121a"/></svg></span> CA <svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="m5 12 5 5L20 7"/></svg></button>
+      <button data-lang="en"><span class="flag-ic"><svg viewBox="0 0 20 14" width="20" height="14"><rect width="20" height="14" fill="#00247d"/><path d="M0 0L20 14M20 0L0 14" stroke="#fff" stroke-width="3"/><path d="M0 0L20 14M20 0L0 14" stroke="#cf142b" stroke-width="1.3"/><rect x="8" width="4" height="14" fill="#fff"/><rect y="5" width="20" height="4" fill="#fff"/><rect x="8.8" width="2.4" height="14" fill="#cf142b"/><rect y="5.8" width="20" height="2.4" fill="#cf142b"/></svg></span> EN <svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="m5 12 5 5L20 7"/></svg></button>
+      <button data-lang="fr"><span class="flag-ic"><svg viewBox="0 0 20 14" width="20" height="14"><rect width="6.67" height="14" fill="#0055A4"/><rect x="6.67" width="6.67" height="14" fill="#fff"/><rect x="13.33" width="6.67" height="14" fill="#EF4135"/></svg></span> FR <svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="m5 12 5 5L20 7"/></svg></button>
+      <button data-lang="ar"><span class="flag-ic"><svg viewBox="0 0 20 14" width="20" height="14"><rect width="20" height="14" fill="#c1272d"/><path d="M10,3.8 L10.74,5.99 L13.04,6.01 L11.19,7.39 L11.88,9.59 L10,8.25 L8.12,9.59 L8.81,7.39 L6.96,6.01 L9.27,5.99 Z" fill="none" stroke="#006233" stroke-width="0.55"/></svg></span> AR <svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="m5 12 5 5L20 7"/></svg></button>
+    </div>
+  </div>
 </div>
 
 <!-- ============ HERO ============ -->
@@ -865,6 +888,7 @@ h1,h2,h3,h4{font-family:var(--serif);font-weight:400;line-height:1.08;letter-spa
           <li><a href="tel:+34641076292">+34 641 07 62 92</a></li>
           <li><a href="mailto:amanagestoria@gmail.com">amanagestoria@gmail.com</a></li>
           <li><span>C/ Manuel Falla 40C · Salt, Girona</span></li>
+          <li><span data-i18n="contact.hoursv">Lunes a viernes, de 9:00 a 14:00 y de 16:00 a 20:00</span></li>
           <li><span data-i18n="footer.online">Online en toda España</span></li>
         </ul>
       </div>
@@ -896,6 +920,7 @@ const I18N = {
   es: {
     "top.loc":"Salt · Girona · Online en toda España",
     "top.hours":"Lun-Vie 9:00-14:00 y 16:00-20:00",
+    "mobile.lang":"Idioma",
     "nav.services":"Servicios","nav.reg":"Regularización","nav.about":"Quiénes somos","nav.ig":"Instagram",
     "nav.process":"Cómo trabajamos","nav.faq":"Preguntas","nav.contact":"Contacto","nav.cta":"Consulta gratuita",
     "hero.eyebrow":"Gestoría administrativa colegiada · Catalunya",
@@ -980,6 +1005,7 @@ const I18N = {
   ca: {
     "top.loc":"Salt · Girona · Online a tota Espanya",
     "top.hours":"Dl-Dv 9:00-14:00 i 16:00-20:00",
+    "mobile.lang":"Idioma",
     "nav.services":"Serveis","nav.reg":"Regularització","nav.about":"Qui som","nav.ig":"Instagram",
     "nav.process":"Com treballem","nav.faq":"Preguntes","nav.contact":"Contacte","nav.cta":"Consulta gratuïta",
     "hero.eyebrow":"Gestoria administrativa col·legiada · Catalunya",
@@ -1064,6 +1090,7 @@ const I18N = {
   en: {
     "top.loc":"Salt · Girona · Online across Spain",
     "top.hours":"Mon-Fri 9:00am-2pm & 4-8pm",
+    "mobile.lang":"Language",
     "nav.services":"Services","nav.reg":"Regularization","nav.about":"About us","nav.ig":"Instagram",
     "nav.process":"How we work","nav.faq":"FAQ","nav.contact":"Contact","nav.cta":"Free consultation",
     "hero.eyebrow":"Registered administrative agency · Catalonia",
@@ -1148,6 +1175,7 @@ const I18N = {
   ar: {
     "top.loc":"سالت · جيرونا · عبر الإنترنت في كل إسبانيا",
     "top.hours":"الإثنين-الجمعة 9:00-14:00 و16:00-20:00",
+    "mobile.lang":"اللغة",
     "nav.services":"الخدمات","nav.reg":"التسوية","nav.about":"من نحن","nav.ig":"إنستغرام",
     "nav.process":"كيف نعمل","nav.faq":"أسئلة شائعة","nav.contact":"اتصل بنا","nav.cta":"استشارة مجانية",
     "hero.eyebrow":"مكتب إداري معتمد · كتالونيا",
@@ -1232,6 +1260,7 @@ const I18N = {
   fr: {
     "top.loc":"Salt · Gérone · En ligne dans toute l'Espagne",
     "top.hours":"Lun-Ven 9h-14h et 16h-20h",
+    "mobile.lang":"Langue",
     "nav.services":"Services","nav.reg":"Régularisation","nav.about":"Qui sommes-nous","nav.ig":"Instagram",
     "nav.process":"Comment nous travaillons","nav.faq":"Questions","nav.contact":"Contact","nav.cta":"Consultation gratuite",
     "hero.eyebrow":"Cabinet de gestion administrative agréé · Catalogne",
@@ -1406,7 +1435,7 @@ const LANG_LABELS={es:"Español",ca:"Català",en:"English",ar:"العربية",f
     document.documentElement.lang = lang;
     document.documentElement.dir = rtl ? 'rtl' : 'ltr';
     document.getElementById('langLabel').textContent = LANG_LABELS[lang];
-    document.querySelectorAll('#langMenu button').forEach(b=>b.classList.toggle('active', b.dataset.lang===lang));
+    document.querySelectorAll('button[data-lang]').forEach(b=>b.classList.toggle('active', b.dataset.lang===lang));
     applyI18n();
     renderMarquee(); renderServices(); renderWhy(); renderFaq(); renderInstagram();
     observeReveals();
@@ -1416,8 +1445,8 @@ const LANG_LABELS={es:"Español",ca:"Català",en:"English",ar:"العربية",f
   const langBtn=document.getElementById('langBtn'), langMenu=document.getElementById('langMenu');
   langBtn.addEventListener('click',e=>{e.stopPropagation();langMenu.classList.toggle('open')});
   document.addEventListener('click',()=>langMenu.classList.remove('open'));
-  document.querySelectorAll('#langMenu button').forEach(b=>{
-    b.addEventListener('click',()=>{ setLang(b.dataset.lang); langMenu.classList.remove('open'); });
+  document.querySelectorAll('button[data-lang]').forEach(b=>{
+    b.addEventListener('click',()=>{ setLang(b.dataset.lang); langMenu.classList.remove('open'); toggleMenu(false); });
   });
 
   /* ---- header scroll ---- */
