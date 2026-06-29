@@ -269,9 +269,7 @@ h1,h2,h3,h4{font-family:var(--serif);font-weight:400;line-height:1.08;letter-spa
 .svc-grid{display:grid;grid-template-columns:1fr;gap:1.4rem}
 @media(min-width:680px){.svc-grid{grid-template-columns:repeat(2,1fr)}}
 @media(min-width:1120px){
-  .svc-grid{grid-template-columns:repeat(12,1fr)}
-  .svc-grid > .svc{grid-column:span 3}
-  .svc-grid > .svc:nth-child(n+5){grid-column:span 4}
+  .svc-grid{grid-template-columns:repeat(4,1fr)}
 }
 .svc{background:var(--paper);border:1px solid var(--line);border-radius:22px;padding:2.2rem 2rem;position:relative;
   overflow:hidden;transition:.5s var(--ease);cursor:default}
@@ -724,7 +722,7 @@ h1,h2,h3,h4{font-family:var(--serif);font-weight:400;line-height:1.08;letter-spa
     </div>
     <div class="stat reveal" data-d="2">
       <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg></div>
-      <div class="num" data-count="7">0</div><div class="lbl" data-i18n="stat.3">áreas de especialidad</div>
+      <div class="num" data-count="8">0</div><div class="lbl" data-i18n="stat.3">áreas de especialidad</div>
     </div>
     <div class="stat reveal" data-d="3">
       <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
@@ -830,6 +828,7 @@ h1,h2,h3,h4{font-family:var(--serif);font-weight:400;line-height:1.08;letter-spa
             <option data-i18n="form.opt4">Asesoría laboral</option>
             <option data-i18n="form.opt5">Administración pública / traducción</option>
             <option data-i18n="form.opt7">Renta y fiscalidad</option>
+            <option data-i18n="form.opt8">Autónomos y sociedades (SL)</option>
             <option data-i18n="form.opt6">Otro</option>
           </select>
         </div>
@@ -868,6 +867,7 @@ h1,h2,h3,h4{font-family:var(--serif);font-weight:400;line-height:1.08;letter-spa
           <li><a href="#servicios" data-i18n="footer.s2">Nacionalidad</a></li>
           <li><a href="#servicios" data-i18n="footer.s3">Tráfico (DGT)</a></li>
           <li><a href="#servicios" data-i18n="footer.s4">Asesoría laboral</a></li>
+          <li><a href="#servicios" data-i18n="footer.s7">Autónomos y SL</a></li>
           <li><a href="#servicios" data-i18n="footer.s6">Renta y fiscalidad</a></li>
           <li><a href="#servicios" data-i18n="footer.s5">Administración pública</a></li>
         </ul>
@@ -962,15 +962,15 @@ const I18N = {
     "form.name":"Nombre y apellidos","form.name.ph":"Tu nombre completo","form.phone":"Teléfono","form.phone.ph":"+34 ...",
     "form.service":"Servicio","form.opt0":"Selecciona un servicio","form.opt1":"Extranjería y nacionalidad",
     "form.opt2":"Regularización extraordinaria","form.opt3":"Tráfico (DGT)","form.opt4":"Asesoría laboral",
-    "form.opt5":"Administración pública / traducción","form.opt6":"Otro","form.opt7":"Renta y fiscalidad","form.msg":"Cuéntanos tu caso",
+    "form.opt5":"Administración pública / traducción","form.opt6":"Otro","form.opt7":"Renta y fiscalidad","form.opt8":"Autónomos y sociedades (SL)","form.msg":"Cuéntanos tu caso",
     "form.msg.ph":"Describe brevemente tu situación...","form.submit":"Enviar por WhatsApp",
     "form.note":"Al enviar, se abrirá WhatsApp con tu mensaje listo. No compartiremos tus datos con terceros.",
     "form.ok":"¡Gracias! Abriendo WhatsApp para enviar tu consulta.",
     "footer.about":"Gestoría administrativa colegiada en Salt (Girona). Especialistas en extranjería, nacionalidad, tráfico y administración pública.",
-    "footer.serv":"Servicios","footer.s1":"Extranjería","footer.s2":"Nacionalidad","footer.s3":"Tráfico (DGT)","footer.s4":"Asesoría laboral","footer.s5":"Administración pública","footer.s6":"Renta y fiscalidad",
+    "footer.serv":"Servicios","footer.s1":"Extranjería","footer.s2":"Nacionalidad","footer.s3":"Tráfico (DGT)","footer.s4":"Asesoría laboral","footer.s5":"Administración pública","footer.s6":"Renta y fiscalidad","footer.s7":"Autónomos y SL",
     "footer.nav":"Navegación","footer.contact":"Contacto","footer.loc":"Salt · Girona, Catalunya","footer.online":"Online en toda España",
     "footer.rights":"Bothaina El Youzghi Kaddoumi · Gestora colegiada COGAC nº 4262",
-    "marquee":["Extranjería","Nacionalidad española","Tráfico · DGT","Asesoría laboral","Renta y fiscalidad","Administración pública","Traducción","Regularización"],
+    "marquee":["Extranjería","Nacionalidad española","Tráfico · DGT","Asesoría laboral","Autónomos y SL","Renta y fiscalidad","Administración pública","Traducción","Regularización"],
     "services":[
       {icon:"globe",t:"Extranjería y nacionalidad",p:"Tramitamos tu residencia y tu camino hacia la ciudadanía española.",
        li:["Permisos de residencia y arraigo","Profesional altamente cualificado","Nómadas digitales","Nacionalidad española"]},
@@ -978,6 +978,8 @@ const I18N = {
        li:["Transferencias de vehículos al momento","Canje de carnets de conducir extranjeros","Matriculación e importación de vehículos","Bajas, duplicados y consulta de puntos"]},
       {icon:"briefcase",t:"Asesoría laboral",p:"Te asesoramos en tu relación laboral y con la Seguridad Social.",
        li:["Revisión de contratos de trabajo","Nóminas","Trámites ante la Seguridad Social"]},
+      {icon:"company",t:"Autónomos y sociedades (SL)",p:"Te ayudamos a iniciar o regularizar tu actividad profesional con trámites claros y seguimiento.",
+       li:["Alta de autónomos y actividad","Constitución de sociedades limitadas (SL)","Cambios censales y obligaciones iniciales","Orientación para elegir la mejor forma jurídica"]},
       {icon:"receipt",t:"Renta y fiscalidad",p:"Te acompañamos en tu Declaración de la Renta y otras gestiones fiscales.",
        li:["Declaración de la Renta (IRPF)","Descarga y revisión del borrador","Cálculo y optimización del IRPF","Gestión ante la Agencia Tributaria"]},
       {icon:"building",t:"Administración pública y traducción",p:"Gestión especializada ante todas las administraciones.",
@@ -1047,15 +1049,15 @@ const I18N = {
     "form.name":"Nom i cognoms","form.name.ph":"El teu nom complet","form.phone":"Telèfon","form.phone.ph":"+34 ...",
     "form.service":"Servei","form.opt0":"Selecciona un servei","form.opt1":"Estrangeria i nacionalitat",
     "form.opt2":"Regularització extraordinària","form.opt3":"Trànsit (DGT)","form.opt4":"Assessoria laboral",
-    "form.opt5":"Administració pública / traducció","form.opt6":"Altres","form.opt7":"Renda i fiscalitat","form.msg":"Explica'ns el teu cas",
+    "form.opt5":"Administració pública / traducció","form.opt6":"Altres","form.opt7":"Renda i fiscalitat","form.opt8":"Autònoms i societats (SL)","form.msg":"Explica'ns el teu cas",
     "form.msg.ph":"Descriu breument la teva situació...","form.submit":"Enviar per WhatsApp",
     "form.note":"En enviar, s'obrirà WhatsApp amb el teu missatge a punt. No compartirem les teves dades amb tercers.",
     "form.ok":"Gràcies! Obrint WhatsApp per enviar la teva consulta.",
     "footer.about":"Gestoria administrativa col·legiada a Salt (Girona). Especialistes en estrangeria, nacionalitat, trànsit i administració pública.",
-    "footer.serv":"Serveis","footer.s1":"Estrangeria","footer.s2":"Nacionalitat","footer.s3":"Trànsit (DGT)","footer.s4":"Assessoria laboral","footer.s5":"Administració pública","footer.s6":"Renda i fiscalitat",
+    "footer.serv":"Serveis","footer.s1":"Estrangeria","footer.s2":"Nacionalitat","footer.s3":"Trànsit (DGT)","footer.s4":"Assessoria laboral","footer.s5":"Administració pública","footer.s6":"Renda i fiscalitat","footer.s7":"Autònoms i SL",
     "footer.nav":"Navegació","footer.contact":"Contacte","footer.loc":"Salt · Girona, Catalunya","footer.online":"Online a tota Espanya",
     "footer.rights":"Bothaina El Youzghi Kaddoumi · Gestora col·legiada COGAC núm. 4262",
-    "marquee":["Estrangeria","Nacionalitat espanyola","Trànsit · DGT","Assessoria laboral","Renda i fiscalitat","Administració pública","Traducció","Regularització"],
+    "marquee":["Estrangeria","Nacionalitat espanyola","Trànsit · DGT","Assessoria laboral","Autònoms i SL","Renda i fiscalitat","Administració pública","Traducció","Regularització"],
     "services":[
       {icon:"globe",t:"Estrangeria i nacionalitat",p:"Tramitem la teva residència i el teu camí cap a la ciutadania espanyola.",
        li:["Permisos de residència i arrelament","Professional altament qualificat","Nòmades digitals","Nacionalitat espanyola"]},
@@ -1063,6 +1065,8 @@ const I18N = {
        li:["Transferències de vehicles al moment","Canvi de carnets de conduir estrangers","Matriculació i importació de vehicles","Baixes, duplicats i consulta de punts"]},
       {icon:"briefcase",t:"Assessoria laboral",p:"T'assessorem en la teva relació laboral i amb la Seguretat Social.",
        li:["Revisió de contractes de treball","Nòmines","Tràmits davant la Seguretat Social"]},
+      {icon:"company",t:"Autònoms i societats (SL)",p:"T'ajudem a iniciar o regularitzar la teva activitat professional amb tràmits clars i seguiment.",
+       li:["Alta d'autònoms i activitat","Constitució de societats limitades (SL)","Canvis censals i obligacions inicials","Orientació per triar la millor forma jurídica"]},
       {icon:"receipt",t:"Renda i fiscalitat",p:"T'acompanyem en la teva Declaració de la Renda i altres gestions fiscals.",
        li:["Declaració de la Renda (IRPF)","Descàrrega i revisió de l'esborrany","Càlcul i optimització de l'IRPF","Gestió davant l'Agència Tributària"]},
       {icon:"building",t:"Administració pública i traducció",p:"Gestió especialitzada davant totes les administracions.",
@@ -1132,15 +1136,15 @@ const I18N = {
     "form.name":"Full name","form.name.ph":"Your full name","form.phone":"Phone","form.phone.ph":"+34 ...",
     "form.service":"Service","form.opt0":"Select a service","form.opt1":"Immigration & nationality",
     "form.opt2":"Extraordinary regularization","form.opt3":"Traffic (DGT)","form.opt4":"Labour advice",
-    "form.opt5":"Public administration / translation","form.opt6":"Other","form.opt7":"Income tax & finances","form.msg":"Tell us about your case",
+    "form.opt5":"Public administration / translation","form.opt6":"Other","form.opt7":"Income tax & finances","form.opt8":"Self-employed and limited companies","form.msg":"Tell us about your case",
     "form.msg.ph":"Briefly describe your situation...","form.submit":"Send via WhatsApp",
     "form.note":"On sending, WhatsApp will open with your message ready. We won't share your data with third parties.",
     "form.ok":"Thank you! Opening WhatsApp to send your enquiry.",
     "footer.about":"Registered administrative agency in Salt (Girona). Specialists in immigration, nationality, traffic and public administration.",
-    "footer.serv":"Services","footer.s1":"Immigration","footer.s2":"Nationality","footer.s3":"Traffic (DGT)","footer.s4":"Labour advice","footer.s5":"Public administration","footer.s6":"Income tax",
+    "footer.serv":"Services","footer.s1":"Immigration","footer.s2":"Nationality","footer.s3":"Traffic (DGT)","footer.s4":"Labour advice","footer.s5":"Public administration","footer.s6":"Income tax","footer.s7":"Self-employed & companies",
     "footer.nav":"Navigation","footer.contact":"Contact","footer.loc":"Salt · Girona, Catalonia","footer.online":"Online across Spain",
     "footer.rights":"Bothaina El Youzghi Kaddoumi · COGAC registered agent No. 4262",
-    "marquee":["Immigration","Spanish nationality","Traffic · DGT","Labour advice","Income tax","Public administration","Translation","Regularization"],
+    "marquee":["Immigration","Spanish nationality","Traffic · DGT","Labour advice","Self-employed & companies","Income tax","Public administration","Translation","Regularization"],
     "services":[
       {icon:"globe",t:"Immigration & nationality",p:"We handle your residence permits and your path to Spanish citizenship.",
        li:["Residence permits & arraigo","Highly qualified professional","Digital nomads","Spanish nationality"]},
@@ -1148,6 +1152,8 @@ const I18N = {
        li:["Instant vehicle ownership transfers","Exchange of foreign driving licences","Vehicle registration & import","Deregistration, duplicates & points check"]},
       {icon:"briefcase",t:"Labour advice",p:"We advise you on your employment and Social Security matters.",
        li:["Employment contract review","Payslips","Social Security procedures"]},
+      {icon:"company",t:"Self-employed and limited companies",p:"We help you start or regularise your professional activity with clear procedures and follow-up.",
+       li:["Self-employed registration and activity setup","Limited company (SL) incorporation","Tax census changes and initial obligations","Guidance on the right legal structure"]},
       {icon:"receipt",t:"Income tax & finances",p:"We support you with your Income Tax Return and other tax procedures.",
        li:["Income Tax Return (IRPF)","Draft download & review","IRPF calculation & optimisation","Procedures before the Tax Agency"]},
       {icon:"building",t:"Public administration & translation",p:"Specialised handling before every administration.",
@@ -1217,15 +1223,15 @@ const I18N = {
     "form.name":"الاسم الكامل","form.name.ph":"اسمك الكامل","form.phone":"الهاتف","form.phone.ph":"+34 ...",
     "form.service":"الخدمة","form.opt0":"اختر خدمة","form.opt1":"شؤون الأجانب والجنسية",
     "form.opt2":"التسوية الاستثنائية","form.opt3":"المرور (DGT)","form.opt4":"استشارة عمالية",
-    "form.opt5":"الإدارة العامة / الترجمة","form.opt6":"أخرى","form.opt7":"الضريبة على الدخل","form.msg":"أخبرنا عن حالتك",
+    "form.opt5":"الإدارة العامة / الترجمة","form.opt6":"أخرى","form.opt7":"الضريبة على الدخل","form.opt8":"العاملون لحسابهم الخاص والشركات (SL)","form.msg":"أخبرنا عن حالتك",
     "form.msg.ph":"صِف وضعك باختصار...","form.submit":"إرسال عبر واتساب",
     "form.note":"عند الإرسال سيُفتح واتساب برسالتك جاهزة. لن نشارك بياناتك مع أي طرف ثالث.",
     "form.ok":"شكرًا لك! جارٍ فتح واتساب لإرسال استفسارك.",
     "footer.about":"مكتب إداري معتمد في سالت (جيرونا). متخصصون في شؤون الأجانب والجنسية والمرور والإدارة العامة.",
-    "footer.serv":"الخدمات","footer.s1":"شؤون الأجانب","footer.s2":"الجنسية","footer.s3":"المرور (DGT)","footer.s4":"استشارة عمالية","footer.s5":"الإدارة العامة","footer.s6":"الضريبة على الدخل",
+    "footer.serv":"الخدمات","footer.s1":"شؤون الأجانب","footer.s2":"الجنسية","footer.s3":"المرور (DGT)","footer.s4":"استشارة عمالية","footer.s5":"الإدارة العامة","footer.s6":"الضريبة على الدخل","footer.s7":"مستقلون وشركات",
     "footer.nav":"تصفّح","footer.contact":"اتصل بنا","footer.loc":"سالت · جيرونا، كتالونيا","footer.online":"أونلاين في كل إسبانيا",
     "footer.rights":"بثينة اليوزغي قدومي · مديرة معتمدة لدى COGAC رقم 4262",
-    "marquee":["شؤون الأجانب","الجنسية الإسبانية","المرور · DGT","استشارة عمالية","الضريبة على الدخل","الإدارة العامة","الترجمة","التسوية"],
+    "marquee":["شؤون الأجانب","الجنسية الإسبانية","المرور · DGT","استشارة عمالية","المستقلون والشركات","الضريبة على الدخل","الإدارة العامة","الترجمة","التسوية"],
     "services":[
       {icon:"globe",t:"شؤون الأجانب والجنسية",p:"نتولّى إقامتك وطريقك نحو الجنسية الإسبانية.",
        li:["تصاريح الإقامة والتجذّر","المهني المؤهّل تأهيلًا عاليًا","الرحّل الرقميون","الجنسية الإسبانية"]},
@@ -1233,6 +1239,8 @@ const I18N = {
        li:["تحويل ملكية المركبات في الحين","تبديل رخص القيادة الأجنبية","تسجيل واستيراد المركبات","إلغاء التسجيل والنسخ المكررة واستعلام النقاط"]},
       {icon:"briefcase",t:"استشارة عمالية",p:"نقدّم لك المشورة في علاقتك العمالية والضمان الاجتماعي.",
        li:["مراجعة عقود العمل","كشوف الرواتب","معاملات الضمان الاجتماعي"]},
+      {icon:"company",t:"العاملون لحسابهم الخاص والشركات (SL)",p:"نساعدك على بدء أو تنظيم نشاطك المهني بإجراءات واضحة ومتابعة دقيقة.",
+       li:["تسجيل العاملين لحسابهم الخاص والنشاط","تأسيس الشركات ذات المسؤولية المحدودة (SL)","تعديلات ضريبية والتزامات أولية","إرشاد لاختيار الشكل القانوني الأنسب"]},
       {icon:"receipt",t:"الضريبة على الدخل والشؤون المالية",p:"نرافقك في تقديم الإقرار الضريبي على الدخل وباقي المعاملات الضريبية.",
        li:["الإقرار الضريبي على الدخل (IRPF)","تحميل ومراجعة المسودة","حساب وتحسين الضريبة (IRPF)","المعاملات أمام الوكالة الضريبية"]},
       {icon:"building",t:"الإدارة العامة والترجمة",p:"إدارة متخصصة أمام جميع الجهات الإدارية.",
@@ -1302,15 +1310,15 @@ const I18N = {
     "form.name":"Nom et prénom","form.name.ph":"Votre nom complet","form.phone":"Téléphone","form.phone.ph":"+34 ...",
     "form.service":"Service","form.opt0":"Choisissez un service","form.opt1":"Immigration et nationalité",
     "form.opt2":"Régularisation extraordinaire","form.opt3":"Circulation (DGT)","form.opt4":"Conseil en droit du travail",
-    "form.opt5":"Administration publique / traduction","form.opt6":"Autre","form.opt7":"Impôts et fiscalité","form.msg":"Racontez-nous votre cas",
+    "form.opt5":"Administration publique / traduction","form.opt6":"Autre","form.opt7":"Impôts et fiscalité","form.opt8":"Indépendants et sociétés (SL)","form.msg":"Racontez-nous votre cas",
     "form.msg.ph":"Décrivez brièvement votre situation...","form.submit":"Envoyer via WhatsApp",
     "form.note":"En envoyant, WhatsApp s'ouvrira avec votre message prêt. Nous ne partagerons pas vos données avec des tiers.",
     "form.ok":"Merci ! Ouverture de WhatsApp pour envoyer votre demande.",
     "footer.about":"Cabinet de gestion administrative agréé à Salt (Gérone). Spécialistes en immigration, nationalité, circulation et administration publique.",
-    "footer.serv":"Services","footer.s1":"Immigration","footer.s2":"Nationalité","footer.s3":"Circulation (DGT)","footer.s4":"Conseil en droit du travail","footer.s5":"Administration publique","footer.s6":"Impôts et fiscalité",
+    "footer.serv":"Services","footer.s1":"Immigration","footer.s2":"Nationalité","footer.s3":"Circulation (DGT)","footer.s4":"Conseil en droit du travail","footer.s5":"Administration publique","footer.s6":"Impôts et fiscalité","footer.s7":"Indépendants et SL",
     "footer.nav":"Navigation","footer.contact":"Contact","footer.loc":"Salt · Gérone, Catalogne","footer.online":"En ligne dans toute l'Espagne",
     "footer.rights":"Bothaina El Youzghi Kaddoumi · Gestionnaire agréée COGAC n° 4262",
-    "marquee":["Immigration","Nationalité espagnole","Circulation · DGT","Conseil en droit du travail","Impôts et fiscalité","Administration publique","Traduction","Régularisation"],
+    "marquee":["Immigration","Nationalité espagnole","Circulation · DGT","Conseil en droit du travail","Indépendants et SL","Impôts et fiscalité","Administration publique","Traduction","Régularisation"],
     "services":[
       {icon:"globe",t:"Immigration et nationalité",p:"Nous gérons votre permis de résidence et votre chemin vers la nationalité espagnole.",
        li:["Permis de résidence et arraigo","Professionnel hautement qualifié","Nomades numériques","Nationalité espagnole"]},
@@ -1318,6 +1326,8 @@ const I18N = {
        li:["Transferts de véhicules dans l'instant","Échange de permis de conduire étrangers","Immatriculation et importation de véhicules","Radiations, duplicatas et solde de points"]},
       {icon:"briefcase",t:"Conseil en droit du travail",p:"Nous vous conseillons dans votre relation de travail et avec la Sécurité sociale.",
        li:["Vérification de contrats de travail","Bulletins de salaire","Démarches auprès de la Sécurité sociale"]},
+      {icon:"company",t:"Indépendants et sociétés (SL)",p:"Nous vous aidons à lancer ou régulariser votre activité professionnelle avec des démarches claires et un suivi.",
+       li:["Inscription comme indépendant et activité","Constitution de sociétés limitées (SL)","Modifications fiscales et obligations initiales","Conseil pour choisir la bonne forme juridique"]},
       {icon:"receipt",t:"Impôts et fiscalité",p:"Nous vous accompagnons dans votre déclaration de revenus et autres démarches fiscales.",
        li:["Déclaration de revenus (IRPF)","Téléchargement et vérification du brouillon","Calcul et optimisation de l'IRPF","Démarches auprès de l'Agence fiscale"]},
       {icon:"building",t:"Administration publique et traduction",p:"Gestion spécialisée auprès de toutes les administrations.",
@@ -1352,6 +1362,7 @@ const LANG_LABELS={es:"Español",ca:"Català",en:"English",ar:"العربية",f
     globe:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>',
     car:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M5 17h14M6.5 17v2M17.5 17v2M3 13l1.5-5A2 2 0 0 1 6.4 6.5h11.2A2 2 0 0 1 19.5 8L21 13M3 13h18v3a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z"/><circle cx="7" cy="13.5" r="1"/><circle cx="17" cy="13.5" r="1"/></svg>',
     briefcase:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M2 13h20"/></svg>',
+    company:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 21h18"/><path d="M6 21V5a2 2 0 0 1 2-2h5a2 2 0 0 1 2 2v16"/><path d="M15 9h3a2 2 0 0 1 2 2v10"/><path d="M9 7h3M9 11h3M9 15h3M17 13h1M17 17h1"/></svg>',
     building:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 21h18M5 21V5a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v16M15 21V9h4a2 2 0 0 1 2 2v10M8 7h2M8 11h2M8 15h2"/></svg>',
     search:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>',
     shield:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 2 4 5v6c0 5.5 3.8 10.7 8 12 4.2-1.3 8-6.5 8-12V5l-8-3z"/><path d="m9 12 2 2 4-4"/></svg>',
